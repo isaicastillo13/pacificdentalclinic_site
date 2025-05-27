@@ -33,17 +33,17 @@ function Hero() {
             </div>
 
             {/* Contenido encima del gradiente y el video */}
-            <div className="absolute top-0 left-0 z-10 flex flex-col items-center justify-around w-full h-full text-white">
+            <div className="absolute top-0 left-0 z-10 flex flex-col items-center justify-around w-full h-full text-neutral-50">
                 <span className="text-[108px] uppercase">Pacific Dental</span>
                 <span className="text-[108px] uppercase">Clinic</span>
             </div>
 
-            <div className="absolute top-0 left-0 z-10 flex items-end justify-between w-full h-full p-10 text-white">
-                <h1 className="w-md text-s">
+            <div className="absolute top-0 left-0 z-10 flex items-end justify-between w-full h-full p-10 text-neutral-50">
+                <h1 className="w-md text-s font-light">
                     Tu Clínica Dental de Confianza en Panamá – Ortodoncia, Invisalign y Más
                 </h1>
                 <img src={iconoFlechaAbajo} alt="icono flecha hacia abajo" />
-                <h2 className="w-md text-s">
+                <h2 className="w-md text-s font-light">
                     Especialistas en odontología general, odontopediatría y tratamientos modernos como Invisalign. ¡Reserva tu cita con dentistas certificados cerca de ti!
                 </h2>
             </div>

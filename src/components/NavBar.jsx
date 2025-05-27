@@ -5,7 +5,7 @@ import iconoContacto from '../assets/icons/contact.svg';
 
 function Navbar() {
     return (
-        <nav className="sticky top-0 z-50 flex items-center justify-between p-8">
+        <nav className="sticky top-0 z-50 flex items-center justify-between p-8 text-neutral-50">
             <div>
                 {/* Logo de la clínica */}
                 <a href="/">
@@ -17,8 +17,8 @@ function Navbar() {
                 </a>
             </div>
 
-            <div className="flex items-center gap-6">
-                <a href="/about" className="flex items-center gap-2">
+            <div className="flex items-center gap-6 ">
+                <a href="/about" className="flex items-center gap-2 ">
                     <img
                         src={iconoNosotros}
                         alt="icono de comunidad"
