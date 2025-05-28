@@ -1,45 +1,54 @@
 import React from "react";
 import ServicesDesc from "./ServicesDesc";
+import iconoFlechaDerecha from "../assets/icons/arrow-right.svg";
+import videoServicios from "../assets/video/apiceptiomia.mp4";
 
 function Services() {
   return (
-    <div className="flex h-screen">
-      <div className="flex flex-col justify-around items-center w-1/2 ">
-      <div className="flex flex-col justify-center items-center gap-4">
-<span className="text-[64px]">SERVICIOS</span>
-        <h2 className="tex-[16px] text-center font-light">
-          Lorem ipsum dolor sit amet consectetur. Morbi sagittis vestibulum nunc
-          pulvinar. Tellus pharetra imperdiet quis vitae.
-        </h2>
-      </div>
-        
-        <div className="grid grid-cols-2 p-4 gap-8">
+    <div className="mx-auto flex h-screen w-11/12 items-center justify-around gap-4">
+      <div className="flex w-1/2 flex-col items-center justify-around gap-20">
+        <div className="flex flex-col items-center justify-center gap-4">
+          <span className="text-[64px]">SERVICIOS</span>
+          <h2 className="text-center font-light tex-[16px]">
+            Lorem ipsum dolor sit amet consectetur. Morbi sagittis vestibulum nunc
+            pulvinar. Tellus pharetra imperdiet quis vitae.
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 gap-8 p-4">
           <ServicesDesc
-            abreviatura="01"
+            abreviatura="ORT"
             servicio="Odontologia General"
             descripcion="Lorem ipsum dolor sit amet consectetur. Morbi sagittis vestibulum nunc pulvinar. Tellus pharetra imperdiet quis vitae."
           />
           <ServicesDesc
-            abreviatura="02"
+            abreviatura="PER"
             servicio="Odontologia Estetica"
             descripcion="Lorem ipsum dolor sit amet consectetur. Morbi sagittis vestibulum nunc pulvinar. Tellus pharetra imperdiet quis vitae."
           />
           <ServicesDesc
-            abreviatura="03"
+            abreviatura="CIR"
             servicio="Ortodoncia"
             descripcion="Lorem ipsum dolor sit amet consectetur. Morbi sagittis vestibulum nunc pulvinar. Tellus pharetra imperdiet quis vitae."
           />
           <ServicesDesc
-            abreviatura="04"
+            abreviatura="LIM"
             servicio="Implantes Dentales"
             descripcion="Lorem ipsum dolor sit amet consectetur. Morbi sagittis vestibulum nunc pulvinar. Tellus pharetra imperdiet quis vitae."
           />
         </div>
-        <button type="button">
+        <a
+          className="flex items-center gap-4 rounded-full bg-gradient-to-r from-[#121922] to-[#486488] p-4 text-neutral-50"
+          href="#"
+        >
           Ver todos los servicios
-          <img src="" alt="" />
-        </button>
+          <img
+            className="flex w-4 items-center justify-center"
+            src={iconoFlechaDerecha}
+            alt="icono flecha derecha"
+          />
+        </a>
       </div>
+      <video className="w-96" autoPlay loop muted src={videoServicios}></video>
     </div>
   );
 }

@@ -22,4 +22,12 @@
   --font-poppins: 'Poppins', sans-serif;
 }
 
+@theme {
+  --color-primary: #40484D;
+  --color-secundary: #121922;
+  --color-accent: #847D81;
+  --color-neutralsligth: #F3F4F8;
+  /* --color-degradado: #78dcca; */
+}
+
 
