@@ -1,8 +1,11 @@
 import fondoPlanta from "../assets/backgrounds/fondoPlanta.webp";
 
+
 function OurNumbers() {
     return (
+        
         <div className="flex flex-col items-center justify-center h-screen p-6 gap-20">
+
             <h2 className="w-4/5 text-center text-6xl font-light">
                 Nuestra trayectoria como <b>dentistas en Panamá</b> nos respalda.
             </h2>
