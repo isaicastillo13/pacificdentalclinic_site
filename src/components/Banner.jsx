@@ -4,7 +4,7 @@ import React from "react";
 function Banner() {
   return (
     <div
-      className="flex flex-col justify-around items-center mx-auto h-screen bg-cover bg-center relative "
+      className="flex flex-col justify-around items-center mx-auto h-screen bg-cover bg-center relative"
       style={{ backgroundImage: `url(${fondoOla})` }}
     >
       <div className="flex flex-col gap-5">
