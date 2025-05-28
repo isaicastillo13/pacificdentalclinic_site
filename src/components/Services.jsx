@@ -5,8 +5,8 @@ import videoServicios from "../assets/video/apiceptiomia.mp4";
 
 function Services() {
   return (
-    <div className="mx-auto flex h-screen w-11/12 items-center justify-around gap-4">
-      <div className="flex w-1/2 flex-col items-center justify-around gap-20">
+    <div className="flex mx-auto h-screen w-11/12 items-center justify-around gap-4">
+      <div className="flex w-1/2 flex-col items-center justify-around gap-10">
         <div className="flex flex-col items-center justify-center gap-4">
           <span className="text-[64px]">SERVICIOS</span>
           <h2 className="text-center font-light tex-[16px]">
@@ -49,7 +49,7 @@ function Services() {
         </a>
       </div>
       {/* Agregar Logica para cambiar videos */}
-      <video className="w-96" autoPlay loop muted src={videoServicios}></video>
+      <video className="w-96 p-2" autoPlay loop muted src={videoServicios}></video>
     </div>
   );
 }

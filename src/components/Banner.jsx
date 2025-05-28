@@ -7,7 +7,7 @@ function Banner() {
       className="flex flex-col justify-around items-center mx-auto h-screen bg-cover bg-center relative"
       style={{ backgroundImage: `url(${fondoOla})` }}
     >
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 mx-auto w-4/5">
         <h2 className="text-6xl font-light">Más que una clínica dental en Panamá</h2>
         <p className="w-2/3 font-light">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
