@@ -4,6 +4,7 @@ import Services from "./components/Services.jsx";
 import Banner from "./components/Banner.jsx";
 import OurNumbers from "./components/OurNumbers.jsx";
 import Testimonies from "./components/Testimonies.jsx";
+import Invisalign from "./components/Invisalign.jsx";
 
 
 function Index() {
@@ -15,6 +16,7 @@ function Index() {
       <Banner />
       <OurNumbers />
       <Testimonies />
+      <Invisalign />
     </>
   );
 }
