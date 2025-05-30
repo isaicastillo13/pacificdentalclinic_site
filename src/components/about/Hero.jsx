@@ -2,7 +2,7 @@ import Navbar  from "../ui/NavBar";
 
 function Hero() {
 return (
-    <div className="flex h-screen flex-col items-center justify-around overflow-hidden p-8">
+    <section className="flex h-screen flex-col items-center justify-around overflow-hidden p-8">
         <Navbar />
         <div className="flex flex-col items-center justify-center gap-3">
             <div className="self-stretch justify-start text-center">
@@ -22,7 +22,7 @@ return (
             src="https://placehold.co/1216x583"
             alt="Pacific Dental Clinic Team"
         />
-    </div>
+    </section>
 );
 }
 
