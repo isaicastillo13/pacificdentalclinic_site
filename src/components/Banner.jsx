@@ -3,7 +3,7 @@ import React from "react";
 
 function Banner() {
   return (
-    <div
+    <section
       className="
         relative
         flex flex-col items-center justify-around
@@ -35,7 +35,7 @@ function Banner() {
           -Pacific Dental Clinic
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

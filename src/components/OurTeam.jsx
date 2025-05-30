@@ -8,7 +8,7 @@ const handleAnimationComplete = () => {
 
 function OurTeam() {
   return (
-    <div>
+    <section>
       {/* Header Section */}
       <div className="pt-28 flex flex-col items-center justify-center text-center">
         <BlurText
@@ -52,7 +52,7 @@ function OurTeam() {
           Para darte la mejor atencion
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
