@@ -1,23 +1,17 @@
-import Hero from "./components/Hero.jsx";
-import OurTeam from "./components/OurTeam.jsx";
-import Services from "./components/Services.jsx";
-import Banner from "./components/Banner.jsx";
-import OurNumbers from "./components/OurNumbers.jsx";
-import Testimonies from "./components/Testimonies.jsx";
-import Invisalign from "./components/Invisalign.jsx";
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Nosotros from "./pages/Nosotros.jsx";
 
 function Index() {
   return (
-    <>
-      <Hero />
-      <OurTeam />
-      <Services />
-      <Banner />
-      <OurNumbers />
-      <Testimonies />
-      <Invisalign />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/nosotros" element={<Nosotros />}></Route>
+        {/* Puedes agregar más rutas aquí */}
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,4 +1,4 @@
-import fondoPlanta from "../assets/backgrounds/fondoPlanta.webp";
+import fondoPlanta from "../../assets/backgrounds/fondoPlanta.webp";
 
 
 function OurNumbers() {

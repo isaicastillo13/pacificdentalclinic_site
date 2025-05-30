@@ -1,4 +1,4 @@
-import fondoOla from "../assets/backgrounds/fondoOla.webp";
+import fondoOla from "../../assets/backgrounds/fondoOla.webp";
 import React from "react";
 
 function Banner() {

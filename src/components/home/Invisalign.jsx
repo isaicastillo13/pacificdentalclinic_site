@@ -1,5 +1,5 @@
-import fondoInvisalign from "../assets/backgrounds/fondoInvisalign.webp";
-import invisalignCase from "../assets/image/invisalignCase.webp";
+import fondoInvisalign from "../../assets/backgrounds/fondoInvisalign.webp";
+import invisalignCase from "../../assets/image/invisalignCase.webp";
 
 function Invisalign() {
   return (

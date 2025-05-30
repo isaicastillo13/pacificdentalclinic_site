@@ -1,4 +1,4 @@
-import logoPcd from '../assets/logo/logo-pacificdentalclinic-oscuro.webp'
+import logoPcd from '../../assets/logo/logo-pacificdentalclinic-oscuro.webp'
 
 function Testimonies() {
   return (

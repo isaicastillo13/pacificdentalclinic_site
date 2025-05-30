@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./Card";
-import BlurText from "./animations/BlurText.jsx";
+import Card from "../ui/Card.jsx";
+import BlurText from "../animations/BlurText.jsx";
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");

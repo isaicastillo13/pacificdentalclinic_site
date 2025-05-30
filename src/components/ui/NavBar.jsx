@@ -1,26 +1,29 @@
-import logoClinica from "../assets/logo/logo-pacificdentalclinic.webp";
-import logoClinicaDark from "../assets/logo/logo-pacificdentalclinic-oscuro.webp";
-import iconoNosotros from "../assets/icons/community.svg";
-import iconoServicios from "../assets/icons/services.svg";
-import iconoContacto from "../assets/icons/contact.svg";
+import logoClinica from "../../assets/logo/logo-pacificdentalclinic.webp";
+import logoClinicaDark from "../../assets/logo/logo-pacificdentalclinic-oscuro.webp";
+import iconoNosotros from "../../assets/icons/community.svg";
+import iconoServicios from "../../assets/icons/services.svg";
+import iconoContacto from "../../assets/icons/contact.svg";
 import { useState } from "react";
 
-function Navbar() {
+
+
+
+function Navbar({iconColor, textColor, logoColor}) {
   const menuItems = [
     {
-      href: "/about",
+      href: "/nosotros",
       icon: iconoNosotros,
       alt: "icono de comunidad",
       label: "Nosotros",
     },
     {
-      href: "/services",
+      href: "/servicios",
       icon: iconoServicios,
       alt: "icono de servicios",
       label: "Servicios",
     },
     {
-      href: "/contact",
+      href: "/contacto",
       icon: iconoContacto,
       alt: "icono de contacto",
       label: "Contacto",
@@ -30,7 +33,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-primary-900 backdrop-blur flex items-center justify-between px-4 py-4 md:px-8 text-neutral-50">
+    <nav className="sticky top-0 z-50 bg-primary-900 backdrop-blur flex items-center justify-between p-4 md:px-8 text-neutralsligth w-full">
       <div>
         <a href="/" aria-label="Inicio">
           <img

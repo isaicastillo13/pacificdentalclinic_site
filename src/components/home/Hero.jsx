@@ -1,7 +1,7 @@
-import videoHero from "../assets/video/HeroPDC.mp4";
-import pageBg from "../assets/backgrounds/page-bg.svg";
-import iconoFlechaAbajo from '../assets/icons/arrow-down-circle.svg';
-import Navbar from "./NavBar";
+import videoHero from "../../assets/video/HeroPDC.mp4";
+import pageBg from "../../assets/backgrounds/page-bg.svg";
+import iconoFlechaAbajo from '../../assets/icons/arrow-down-circle.svg';
+import Navbar from "../ui/NavBar";
 
 function Hero() {
     return (

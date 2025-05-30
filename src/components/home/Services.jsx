@@ -1,7 +1,7 @@
 import React from "react";
-import ServicesDesc from "./ServicesDesc";
-import iconoFlechaDerecha from "../assets/icons/arrow-right.svg";
-import videoServicios from "../assets/video/apiceptiomia.mp4";
+import ServicesDesc from "../ui/ServicesDesc";
+import iconoFlechaDerecha from "../../assets/icons/arrow-right.svg";
+import videoServicios from "../../assets/video/apiceptiomia.mp4";
 
 function Services() {
   return (
