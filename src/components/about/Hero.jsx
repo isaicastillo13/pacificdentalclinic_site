@@ -13,9 +13,9 @@ return (
                     TEAM
                 </span>
             </div>
-            <div className="w-11/12 justify-start text-center font-light text-[10px] md:text-[12px] lg:text-[16px]">
+            <p className="w-11/12 justify-start text-center font-light text-[10px] md:text-[12px] lg:text-[16px]">
                 Figma ipsum component variant main layer. Flows figma flatten reesizing draft scrolling flows thumbnail scale editor.
-            </div>
+            </p>
         </div>
         <img
             className="rounded-3xl"

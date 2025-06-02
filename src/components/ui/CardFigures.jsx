@@ -1,15 +1,13 @@
-function CardFigures({ figures, description }) {
+function CardFigures({ figures, description,color = 'bg-[#A6B4BA]', textColor = 'text-neutralsligth' }) {
   return (
-    <div className="w-[472px] h-40 relative bg-gray-400 rounded-3xl overflow-hidden">
-      <div className="w-96 h-28 left-[42px] top-[23px] absolute">
-        <div className="w-80 h-28 left-0 top-0 absolute">
-          <div className="left-0 top-0 absolute text-justify justify-start text-gray-100 text-6xl font-normal font-['Poppins']">
-            17,8K
-          </div>
-        </div>
-        <div className="left-[2px] top-[96px] absolute text-justify justify-start text-gray-100 text-base font-['Poppins']">
-          Procedimientos Realizados con Equipos Digitales
-        </div>
+    <div className={`h-28 md:h-32 lg:h-40 relative ${color} rounded-3xl overflow-hidden px-10`}>
+      <div className="">
+          <span className={`text-justify justify-start ${textColor} text-[32px] md:text-[40px] lg:text-[54px]`}>
+            {figures}
+          </span>
+        <p className={`text-justify justify-start ${textColor} text-[10px] md:text-[12px] lg:text-[16px]`}>
+          {description}
+        </p>
       </div>
     </div>
   );
