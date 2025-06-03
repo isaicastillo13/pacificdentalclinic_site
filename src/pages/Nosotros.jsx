@@ -3,7 +3,7 @@ import Hero from "../components/about/Hero.jsx"
 import History from "../components/about/History.jsx"
 import OurTeam from "../components/home/OurTeam.jsx";
 import Technology from "../components/about/Technology.jsx";
-
+import VisionMision from "../components/about/VisionMision.jsx";
 function Nosotros() {
   return (
     <>
@@ -11,6 +11,7 @@ function Nosotros() {
       <History />
       <OurTeam />
       <Technology />
+      <VisionMision />
     </>
   );
 }
