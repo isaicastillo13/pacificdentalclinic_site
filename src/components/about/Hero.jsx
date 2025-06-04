@@ -2,9 +2,12 @@ import Navbar  from "../ui/NavBar";
 
 function Hero() {
 return (
-    <section className="flex h-screen flex-col items-center justify-around overflow-hidden p-8">
-        <Navbar />
-        <div className="flex flex-col items-center justify-center gap-3">
+    <section className="flex h-screen flex-col items-center justify-around overflow-hidden p-8 gap-8">
+        <Navbar 
+            color="text-primary"
+            logoColor='logoClinicaDark'
+        />
+        <div className="flex flex-col items-center justify-center gap-4 text-center">
             <div className="self-stretch justify-start text-center">
                 <span className="text-primary font-light uppercase text-[40px] md:text-[80px] lg:text-[108px]">
                     PACIFIC{" "}

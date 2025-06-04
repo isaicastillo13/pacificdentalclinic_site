@@ -8,7 +8,7 @@ import { useState } from "react";
 
 
 
-function Navbar({iconColor, textColor, logoColor}) {
+function Navbar({color = 'text-neutralsligth', logoColor}) {
   const menuItems = [
     {
       href: "/nosotros",
@@ -33,7 +33,7 @@ function Navbar({iconColor, textColor, logoColor}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-primary-900 backdrop-blur flex items-center justify-between p-4 md:px-8 text-neutralsligth w-full">
+    <nav className={`sticky top-0 z-50 bg-primary-900 backdrop-blur flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
       <div>
         <a href="/" aria-label="Inicio">
           <img
@@ -155,7 +155,7 @@ function Navbar({iconColor, textColor, logoColor}) {
           <a
             key={item.label}
             href={item.href}
-            className="flex items-center space-x-2 text-white"
+            className="flex items-center space-x-2 "
           >
             <img src={item.icon} alt={item.alt} className="h-6 w-6" />
             <span>{item.label}</span>
