@@ -15,14 +15,10 @@ return (
         <div className="relative flex flex-col items-center justify-center h-full z-10">
             <div className="flex flex-col items-center justify-center gap-4 w-3/6 text-center">
                 <h2 className="text-[32px] text-neutralsligth md:text-[40px] lg:text-[54px]">
-                    Un Espacio Pensado para tu Comodidad y Bienestar
+                    ¿Listo para transformar tu sonrisa?
                 </h2>
                 <p className="text-[10px] font-light text-neutralsligth md:text-xs lg:text-base">
-                    En nuestra clínica, cada detalle ha sido cuidadosamente diseñado
-                    para ofrecerte una experiencia agradable desde el primer momento.
-                    Contamos con instalaciones modernas, amplias y climatizadas,
-                    equipadas con tecnología de vanguardia que garantiza diagnósticos
-                    precisos y tratamientos eficaces.
+                    Da el primer paso hacia una sonrisa más saludable y segura. Nuestro equipo de dentistas en Panamá te espera con atención personalizada, tecnología avanzada y un ambiente cálido que te hará sentir en confianza desde el primer momento.
                 </p>
                 < Buttom/>
             </div>

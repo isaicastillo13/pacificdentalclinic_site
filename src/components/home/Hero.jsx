@@ -41,7 +41,7 @@ function Hero() {
             {/* Footer del Hero */}
             <div className="absolute top-0 left-0 z-10 flex h-full w-full items-end justify-between gap-8 p-10 text-neutral-50 md:gap-0">
                 <h1 className="font-light text-[10px] md:w-44 md:text-[12px] lg:w-md lg:text-[16px]">
-                    Tu Clínica Dental de Confianza en Panamá – Ortodoncia, Invisalign y Más
+                    Clínica de odontología en Panamá con tratamientos innovadores y atención especializada
                 </h1>
                 <img
                     className="hidden md:block"
@@ -49,7 +49,7 @@ function Hero() {
                     alt="icono flecha hacia abajo"
                 />
                 <h2 className="font-light text-[10px] md:w-44 md:text-[12px] lg:w-md lg:text-[16px]">
-                    Especialistas en odontología general, odontopediatría y tratamientos modernos como Invisalign. ¡Reserva tu cita con dentistas certificados cerca de ti!
+                    Descubre por qué somos una de las mejores clínicas dentales en Panamá. Servicios personalizados en ortodoncia, odontopediatría, estética dental y más.
                 </h2>
             </div>
         </section>

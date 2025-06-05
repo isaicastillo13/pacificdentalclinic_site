@@ -18,9 +18,9 @@ function Hero() {
                         SERVICIOS
                     </span>
                 </div>
-                <p className="w-11/12 text-[10px] md:text-[12px] lg:text-[16px] font-light text-center">
-                    Figma ipsum component variant main layer. Flows figma flatten reesizing draft scrolling flows thumbnail scale editor.
-                </p>
+                <h1 className="w-11/12 text-[10px] md:text-[12px] lg:text-[16px] font-light text-center">
+                    Servicios odontológicos con atención personalizada y tecnología avanzada
+                </h1>
             </div>
             <img
                 className="rounded-3xl"

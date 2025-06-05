@@ -12,7 +12,7 @@ function OurTeam() {
       {/* Header Section */}
       <div className="pt-28 flex flex-col items-center justify-center text-center">
         <BlurText
-          text="Conoce a tus aliados de tu salud bucal"
+          text="Contamos con un equipo multidisciplinario de odontólogos, ortodoncistas y especialistas comprometidos con tu salud bucal."
           delay={150}
           animateBy="words"
           direction="top"
@@ -20,7 +20,7 @@ function OurTeam() {
           className="mb-8 font-light"
         />
         <h2 className="w-11/12 text-[32px] md:text-[40px] lg:text-[54px]">
-          Este es el equipo de <b>profesionales</b> en nuestra Clínica Dental
+          Conoce a nuestro equipo de <b className="font-bold">Expertos</b>
         </h2>
       </div>
 

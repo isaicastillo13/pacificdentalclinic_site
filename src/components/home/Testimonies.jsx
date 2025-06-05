@@ -7,7 +7,7 @@ function Testimonies() {
       <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-neutralsligth shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
       <div className="mx-auto max-w-2xl lg:max-w-4xl flex flex-col items-center justify-center gap-10 text-center">
         <div className='flex flex-col items-center mb-10 gap-10'>
-            <h2 className='text-center text-primary  text-[32px] md:text-[40px] lg:text-[54px]'>¿SOMOS <b className='font-bold'>LA MEJOR CLINICA</b> DE DENTAL DE PANAMÁ ?</h2>
+            <h2 className='text-center text-primary  text-[32px] md:text-[40px] lg:text-[54px]'>¿SOMOS <b className='font-bold'>LA MEJOR CLINICA</b> DENTAL DE PANAMÁ ?</h2>
             {/* <p className='font-light'>ESTO DICEN NUESTRO PACIENTES</p> */}
         </div>
         {/* 

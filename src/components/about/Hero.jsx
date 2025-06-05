@@ -17,9 +17,9 @@ return (
                     TEAM
                 </span>
             </div>
-            <p className="w-11/12 justify-start text-center font-light text-[10px] md:text-[12px] lg:text-[16px]">
-                Figma ipsum component variant main layer. Flows figma flatten reesizing draft scrolling flows thumbnail scale editor.
-            </p>
+            <h1 className="w-11/12 justify-start text-center font-light text-[10px] md:text-[12px] lg:text-[16px]">
+                Conoce al equipo de dentistas en Panamá que transforma sonrisas
+            </h1>
         </div>
         <img
             className="rounded-3xl"

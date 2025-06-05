@@ -5,13 +5,11 @@ function Technology() {
   return (
     <section className="flex flex-col justify-center items-center h-full overflow-hidden px-10 py-16 gap-8">
       <div className="flex flex-col justify-center md:items-start items-center gap-8">
-        <h2 className="text-[32px] text-primary text-center md:text-left md:text-[40px] lg:text-[54px]">
-          Avanzamos contigo, con lo último en odontología
+        <h2 className="text-[32px] text-primary text-center md:text-left md:text-[40px] lg:text-[54px] md:w-2/3">
+          Tecnología avanzada para una odontología moderna en Panamá
         </h2>
         <p className="text-[10px] md:text-[12px] lg:text-[16px] md:w-3/6">
-          Figma ipsum component variant main layer. Italic union select edit
-          shadow inspect shadow variant layer. Vertical figma share variant
-          star. Shadow vector auto layout asset bold blur.
+          En nuestra clínica dental contamos con tecnología de última generación para garantizar diagnósticos precisos, tratamientos efectivos y experiencias cómodas para cada paciente. Creemos en una odontología digital, segura y eficiente.
         </p>
       </div>
 

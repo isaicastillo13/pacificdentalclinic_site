@@ -2,14 +2,14 @@ import CardProcedure from "../ui/CardProcedures.jsx";
 
 function Procedures() {
     return (
-        <section className="flex flex-col items-center justify-center gap-4 py-16 md:justify-around">
-            <div className="flex flex-col items-center justify-center gap-4">
+        <section className="flex flex-col items-center justify-center gap-10 py-16 md:justify-around">
+            <div className="flex flex-col items-center justify-center gap-20">
                 <h2 className="max-w-5/6 text-center text-2xl md:text-4xl lg:text-5xl">
-                    Detrás de cada sonrisa, hay un{" "}
-                    <b className="font-bold">equipo comprometido</b>
+                   Conoce cómo cuidamos tu sonrisa: {" "}
+                    <b className="font-bold">procedimientos dentales en acción</b>
                 </h2>
-                <p className="max-w-5/6 text-xs md:text-sm lg:text-base">
-                    Figma ipsum component variant main layer. Undo list comment create rectangle union.
+                <p className="max-w-5/6 text-xs md:text-sm lg:text-base text-center">
+                    Conoce paso a paso cómo realizamos nuestros tratamientos dentales más solicitados. Videos reales de nuestros especialistas en acción, tecnología de vanguardia y resultados visibles.
                 </p>
             </div>
 
