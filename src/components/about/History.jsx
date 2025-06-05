@@ -4,7 +4,7 @@ import fotoVieja from "../../assets/image/fotoVieja.webp";
 
 function History() {
 return (
-    <section className="flex flex-col justify-center items-center h-screen overflow-hidden p-10  ">
+    <section className="flex flex-col justify-center items-center h-full overflow-hidden p-10  ">
         <div className="flex flex-col items-center justify-center">
             <img
                 src={logoClinicaDark}

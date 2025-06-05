@@ -2,14 +2,16 @@ import ServicesDesc from "../ui/ServicesDesc";
 
 function OurServices() {
   return (
-    <section className="">
-      <div className="flex flex-col md:items-center md:justify-center md:h-screen gap-10">
-        <h2 className="text-center text-[32px] md:text-[40px] lg:text-[54px] px-4">Atención Integral para tu <b className="font-bold">Salud Bucal</b></h2>
-        <p className="text-[10px] md:text-xs lg:text-base text-center">
+    <section>
+      <div className="flex flex-col gap-10 md:h-screen md:items-center md:justify-center">
+        <h2 className="px-4 text-center text-[32px] md:text-[40px] lg:text-[54px]">
+          Atención Integral para tu <b className="font-bold">Salud Bucal</b>
+        </h2>
+        <p className="text-center text-[10px] md:text-xs lg:text-base">
           Figma ipsum component variant main layer. Undo list comment create
           rectangle union.
         </p>
-        <div className="grid gap-8 p-4 md:grid-cols-2 w-2/3 mx-auto">
+        <div className="mx-auto grid w-2/3 gap-8 p-4 md:grid-cols-2">
           <ServicesDesc
             abreviatura="ORT"
             servicio="Odontologia General"

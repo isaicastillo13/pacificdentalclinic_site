@@ -3,12 +3,13 @@ import logoClinicaDark from "../../assets/logo/logo-pacificdentalclinic-oscuro.w
 import iconoNosotros from "../../assets/icons/community.svg";
 import iconoServicios from "../../assets/icons/services.svg";
 import iconoContacto from "../../assets/icons/contact.svg";
+import BottomContact from './Buttom.jsx'
 import { useState } from "react";
 
 
 
 
-function Navbar({color = 'text-neutralsligth', logoColor}) {
+function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
   const menuItems = [
     {
       href: "/nosotros",
@@ -23,10 +24,10 @@ function Navbar({color = 'text-neutralsligth', logoColor}) {
       label: "Servicios",
     },
     {
-      href: "/contacto",
-      icon: iconoContacto,
-      alt: "icono de contacto",
-      label: "Contacto",
+      href: "https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FLKGBJRM3FAVOO1%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacti-RBGG177AjxgDgiuQ8g21chhmcv6A90lYsJGeHR2VukbqdUT1i2DFNxFw_aem_jKjx6xwjcONPBpGlnV60NQ&e=AT11mX5vx7aDgTYrCw0HeI_T-YE0XsglxUzg8M44uRImoXV3RMQL3cA6VZ0I9PL4S2D2RcmoewL2f0v5EEGFBnydzQ5juYe6tRpU3g",
+      icon: null,
+      alt: null,
+      label: <BottomContact />,
     },
   ];
 
@@ -37,7 +38,7 @@ function Navbar({color = 'text-neutralsligth', logoColor}) {
       <div>
         <a href="/" aria-label="Inicio">
           <img
-            src={logoClinica}
+            src={logoColor}
             alt="logo de la clinica"
             className="h-12 w-auto "
             loading="lazy"
@@ -52,7 +53,7 @@ function Navbar({color = 'text-neutralsligth', logoColor}) {
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg
-              className="h-8 w-8 text-neutralsligth"
+              className={`h-8 w-8 ${color}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -157,7 +158,7 @@ function Navbar({color = 'text-neutralsligth', logoColor}) {
             href={item.href}
             className="flex items-center space-x-2 "
           >
-            <img src={item.icon} alt={item.alt} className="h-6 w-6" />
+            
             <span>{item.label}</span>
           </a>
         ))}

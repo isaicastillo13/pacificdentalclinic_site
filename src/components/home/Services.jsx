@@ -15,7 +15,7 @@ function Services() {
             Lorem ipsum dolor sit amet consectetur. Morbi sagittis vestibulum nunc pulvinar. Tellus pharetra imperdiet quis vitae.
           </h2>
         </div>
-        <div className="grid gap-8 p-4 lg:grid-cols-2">
+        <div className="mx-auto grid w-2/3 gap-8 p-4 md:grid md:gap-8 md:p-4 md:w-full lg:grid-cols-2">
           <ServicesDesc
             abreviatura="ORT"
             servicio="Odontologia General"

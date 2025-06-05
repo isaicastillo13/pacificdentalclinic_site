@@ -1,32 +1,34 @@
-import Navbar  from "../ui/NavBar";
+import Navbar from "../ui/NavBar";
+import logoClinicaDark from "../../assets/logo/logo-pacificdentalclinic-oscuro.webp";
+
 
 function Hero() {
-return (
-    <section className="flex h-screen flex-col items-center justify-around overflow-hidden p-8 gap-8">
-        <Navbar 
+    return (
+        <section className="flex flex-col items-center justify-around gap-8 p-8 h-screen md:h-full overflow-hidden">
+            <Navbar 
             color="text-primary"
-            logoColor='logoClinicaDark'
+            logoColor={logoClinicaDark}
         />
-        <div className="flex flex-col items-center justify-center gap-4 text-center">
-            <div className="self-stretch justify-start text-center">
-                <span className="text-primary font-light uppercase text-[40px] md:text-[80px] lg:text-[108px]">
-                    NUESTROS{" "}
-                </span>
-                <span className="bg-gradient-to-r from-primary from-0% via-[#486488] via-60% to-neutralsligth to-90% bg-clip-text font-medium uppercase text-transparent text-[40px] md:text-[80px] lg:text-[108px]">
-                    SERVICIOS
-                </span>
+            <div className="flex flex-col items-center justify-center gap-4 text-center">
+                <div className="self-stretch text-center justify-start">
+                    <span className="text-[40px] md:text-[80px] lg:text-[108px] font-light uppercase text-primary">
+                        NUESTROS{" "}
+                    </span>
+                    <span className="text-[40px] md:text-[80px] lg:text-[108px] font-medium uppercase bg-gradient-to-r from-primary via-[#486488] to-neutralsligth bg-clip-text text-transparent">
+                        SERVICIOS
+                    </span>
+                </div>
+                <p className="w-11/12 text-[10px] md:text-[12px] lg:text-[16px] font-light text-center">
+                    Figma ipsum component variant main layer. Flows figma flatten reesizing draft scrolling flows thumbnail scale editor.
+                </p>
             </div>
-            <p className="w-11/12 justify-start text-center font-light text-[10px] md:text-[12px] lg:text-[16px]">
-                Figma ipsum component variant main layer. Flows figma flatten reesizing draft scrolling flows thumbnail scale editor.
-            </p>
-        </div>
-        <img
-            className="rounded-3xl"
-            src="https://placehold.co/1216x583"
-            alt="Pacific Dental Clinic Team"
-        />
-    </section>
-);
+            <img
+                className="rounded-3xl"
+                src="https://placehold.co/1216x583"
+                alt="Pacific Dental Clinic Team"
+            />
+        </section>
+    );
 }
 
 export default Hero;

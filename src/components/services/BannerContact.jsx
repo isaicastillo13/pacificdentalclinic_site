@@ -1,4 +1,5 @@
 import fondoServicio from "../../assets/backgrounds/fondoServicio.webp";
+import Buttom from "../ui/Buttom";
 
 
 function OurClinic() {
@@ -6,10 +7,10 @@ return (
     <section className="h-screen overflow-hidden relative">
         {/* Blurred background image */}
         <div
-            className="absolute inset-0 bg-cover bg-center blur-sm"
-            style={{ backgroundImage: `url(${fondoServicio})`, zIndex: 0 }}
+            className="absolute inset-0 z-0 bg-center bg-cover blur-sm"
+            style={{ backgroundImage: `url(${fondoServicio})` }}
             aria-hidden="true"
-        />
+        ></div>
         {/* Content */}
         <div className="relative flex flex-col items-center justify-center h-full z-10">
             <div className="flex flex-col items-center justify-center gap-4 w-3/6 text-center">
@@ -23,6 +24,7 @@ return (
                     equipadas con tecnología de vanguardia que garantiza diagnósticos
                     precisos y tratamientos eficaces.
                 </p>
+                < Buttom/>
             </div>
         </div>
     </section>

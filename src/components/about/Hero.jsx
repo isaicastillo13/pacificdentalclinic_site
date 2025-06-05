@@ -1,11 +1,12 @@
 import Navbar  from "../ui/NavBar";
+import logoClinicaDark from "../../assets/logo/logo-pacificdentalclinic-oscuro.webp";
 
 function Hero() {
 return (
-    <section className="flex h-screen flex-col items-center justify-around overflow-hidden p-8 gap-8">
+    <section className="flex h-screen md:h-full flex-col items-center justify-around overflow-hidden p-8 gap-8">
         <Navbar 
             color="text-primary"
-            logoColor='logoClinicaDark'
+            logoColor={logoClinicaDark}
         />
         <div className="flex flex-col items-center justify-center gap-4 text-center">
             <div className="self-stretch justify-start text-center">

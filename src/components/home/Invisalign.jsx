@@ -30,7 +30,7 @@ function Invisalign() {
       {/* Info Section */}
       <div className="
         flex flex-col items-center justify-center gap-8 p-6 min-h-[60vh] bg-secundary text-neutralsligth
-        md:flex-row md:h-screen
+        md:flex-row md:h-full
       ">
         <div className="
           flex flex-col items-center w-full md:w-1/2
