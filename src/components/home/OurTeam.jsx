@@ -8,16 +8,16 @@ const handleAnimationComplete = () => {
 
 function OurTeam() {
   return (
-    <section>
+    <section className="">
       {/* Header Section */}
-      <div className="pt-28 flex flex-col items-center justify-center text-center">
+      <div className="pt-28 flex flex-col items-center justify-center text-center p-6">
         <BlurText
           text="Contamos con un equipo multidisciplinario de odontólogos, ortodoncistas y especialistas comprometidos con tu salud bucal."
           delay={150}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="mb-8 font-light"
+          className="mb-8 font-light flex flex-row justify-center items-center"
         />
         <h2 className="w-11/12 text-[32px] md:text-[40px] lg:text-[54px]">
           Conoce a nuestro equipo de <b className="font-bold">Expertos</b>
