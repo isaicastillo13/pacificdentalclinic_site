@@ -13,7 +13,7 @@ function OurNumbers() {
                     <p className="text-[10px] font-light md:text-xs lg:text-base">
                         Al servicio de tu salud bucal
                     </p>
-                    <p className="text-[32px] md:text-[40px] lg:text-[54px]">
+                    <p className="text-[32px] md:text-[40px] lg:text-[54px] font-bold">
                         <span>+20</span>AÑOS
                     </p>
                 </div>
@@ -22,7 +22,7 @@ function OurNumbers() {
                     <p className="text-[10px] font-light md:text-xs lg:text-base">
                         Cada una con su propia historia.
                     </p>
-                    <p className="text-[32px] md:text-[40px] lg:text-[54px]">
+                    <p className="text-[32px] md:text-[40px] lg:text-[54px] font-bold">
                         <span>+1K</span>SONRISAS
                     </p>
                 </div>
@@ -31,7 +31,7 @@ function OurNumbers() {
                     <p className="text-[10px] font-light md:text-xs lg:text-base">
                         Para darte la mejor atención nuestros
                     </p>
-                    <p className="text-[32px] md:text-[40px] lg:text-[54px]">
+                    <p className="text-[32px] md:text-[40px] lg:text-[54px] font-bold">
                         EXPERTOS
                     </p>
                 </div>
