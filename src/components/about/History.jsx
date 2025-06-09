@@ -1,6 +1,6 @@
 import React from "react";
 import logoClinicaDark from "../../assets/logo/logo-pacificdentalclinic-oscuro.webp";
-import fotoVieja from "../../assets/image/fotoVieja.webp";
+import fotoVieja from "../../assets/image/fotovieja.webp";
 
 function History() {
 return (
