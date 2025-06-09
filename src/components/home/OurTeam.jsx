@@ -17,7 +17,7 @@ function OurTeam() {
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="mb-8 font-light flex flex-row justify-center items-center"
+          className="mb-8 font-light flex flex-row justify-center items-center text-[10px] md:text-[12px] lg:text-[16px]"
         />
         <h2 className="w-11/12 text-[32px] md:text-[40px] lg:text-[54px]">
           Conoce a nuestro equipo de <b className="font-bold">Expertos</b>
