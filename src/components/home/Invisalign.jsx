@@ -38,7 +38,7 @@ function Invisalign() {
           <h2 className="
             mb-4 font-light text-[32px] md:text-[40px] lg:text-[54px]
           ">
-            Invisalign Panamá: La Solución Perfecta para una Sonrisa Discreta
+           <b className="font-bold">Invisalign Panamá:</b>  La Solución Perfecta para una Sonrisa Discreta
           </h2>
           <img
             src={invisalignCase}
