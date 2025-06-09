@@ -25,7 +25,7 @@ function VisionMision() {
         {/* vision */}
         <div className="flex flex-col gap-10">
             <img className="w-8" src={quotes} alt="icono de comillas" />
-            <p className="text-justify">
+            <p className="text-justify text-[10px] md:text-[12px] lg:text-[16px]">
                 Ser una clínica odontológica reconocida por transformar la
                 experiencia dental en algo humano, confiable y accesible, donde cada
                 sonrisa sea reflejo de nuestro compromiso con la salud bucal y la
@@ -52,7 +52,7 @@ function VisionMision() {
             <h3 className="font-medium">Mision</h3>
             <img src={sun} alt="" />
           </div>
-          <p className="text-justify">
+          <p className="text-justify text-[10px] md:text-[12px] lg:text-[16px]">
             Brindar atención odontológica integral, ética y de calidad, enfocada
             en la prevención, el diagnóstico preciso y tratamientos
             personalizados, para mejorar la salud bucal y la calidad de vida de
