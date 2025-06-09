@@ -5,11 +5,11 @@ import videoServicios from "../../assets/video/apiceptiomia.mp4";
 
 function Services() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-16 mx-auto md:w-11/12 md:flex-row md:justify-around lg:h-screen lg:py-0">
+    <section className="flex flex-col items-center justify-center gap-4 py-16 p-6 mx-auto md:w-11/12 md:flex-row md:justify-around lg:h-screen lg:py-0">
       <div className="flex w-full flex-col items-center justify-around gap-10 md:w-1/2">
         <div className="flex flex-col items-center gap-4">
           <h2 className="text-[32px] md:text-[40px] lg:text-[54px] uppercase">
-            Servicios odontológicos especializados
+            Servicios <b className="font-bold">odontológicos especializados</b>
           </h2>
           <h3 className="text-center font-light text-[10px] md:text-xs lg:text-base">
             Atendemos todas tus necesidades dentales con tecnología de punta y profesionales altamente capacitados.
