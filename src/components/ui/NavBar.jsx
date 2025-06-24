@@ -34,7 +34,7 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`sticky top-0 z-50 bg-primary-900 backdrop-blur flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
+    <nav className={`absolute top-0 z-50 bg-primary-900 backdrop-blur flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
       <div>
         <a href="/" aria-label="Inicio">
           <img
