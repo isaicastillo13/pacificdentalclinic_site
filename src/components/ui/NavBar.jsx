@@ -24,7 +24,7 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
       label: "Servicios",
     },
     {
-      href: "https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FLKGBJRM3FAVOO1%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacti-RBGG177AjxgDgiuQ8g21chhmcv6A90lYsJGeHR2VukbqdUT1i2DFNxFw_aem_jKjx6xwjcONPBpGlnV60NQ&e=AT11mX5vx7aDgTYrCw0HeI_T-YE0XsglxUzg8M44uRImoXV3RMQL3cA6VZ0I9PL4S2D2RcmoewL2f0v5EEGFBnydzQ5juYe6tRpU3g",
+      href: "https://api.whatsapp.com/message/LKGBJRM3FAVOO1?autoload=1&app_absent=0",
       icon: null,
       alt: null,
       label: <BottomContact />,
@@ -34,7 +34,7 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`absolute top-0 z-50 bg-primary-900 backdrop-blur flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
+    <nav className={`absolute top-0 z-50 backdrop-blur flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
       <div>
         <a href="/" aria-label="Inicio">
           <img

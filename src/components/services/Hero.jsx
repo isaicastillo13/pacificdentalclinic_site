@@ -4,11 +4,12 @@ import logoClinicaDark from "../../assets/logo/logo-pacificdentalclinic-oscuro.w
 
 function Hero() {
     return (
-        <section className="flex flex-col items-center justify-around gap-8 p-8 h-screen md:h-full overflow-hidden">
+        <>
             <Navbar 
             color="text-primary"
             logoColor={logoClinicaDark}
         />
+        <section className="flex h-screen flex-col items-center justify-around overflow-hidden px-8 gap-8">
             <div className="flex flex-col items-center justify-center gap-4 text-center">
                 <div className="self-stretch text-center justify-start">
                     <span className="text-[40px] md:text-[80px] lg:text-[108px] font-light uppercase text-primary">
@@ -22,12 +23,10 @@ function Hero() {
                     Servicios odontológicos con atención personalizada y tecnología avanzada
                 </h1>
             </div>
-            <img
-                className="rounded-3xl"
-                src="https://placehold.co/1216x583"
-                alt="Pacific Dental Clinic Team"
-            />
+
         </section>
+        </>
+        
     );
 }
 

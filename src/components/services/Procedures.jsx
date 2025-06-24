@@ -1,4 +1,7 @@
 import CardProcedure from "../ui/CardProcedures.jsx";
+import videoOrtondencia from "../../assets/video/ortodoncia.mp4";
+import videoBlaqueamiento from "../../assets/video/blaqueamiento.mp4";
+import videoApiceptiomia from "../../assets/video/apiceptiomia.mp4";
 
 function Procedures() {
     return (
@@ -16,15 +19,19 @@ function Procedures() {
             <div className="flex flex-wrap items-center justify-center gap-4 p-4 md:flex-row">
                 <CardProcedure
                     procedures="Ortodoncia"
-                    description="We offer a wide range of medical procedures to ensure your health and well-being. Our team of experts is dedicated to providing the best care possible."
+                    description="Corrección de la posición dental con técnicas convencionales, ideal para adolescentes y adultos."
+                    video ={videoOrtondencia}
+
                 />
                 <CardProcedure
-                    procedures="Periodoncia"
-                    description="We offer a wide range of medical procedures to ensure your health and well-being. Our team of experts is dedicated to providing the best care possible."
+                    procedures="Blaqueamiento"
+                    description="Recupera el brillo natural de tu sonrisa con nuestro tratamiento profesional de blanqueamiento dental."
+                    video={videoBlaqueamiento}
                 />
                 <CardProcedure
                     procedures="Cirugias"
-                    description="We offer a wide range of medical procedures to ensure your health and well-being. Our team of experts is dedicated to providing the best care possible."
+                    description="Extracciones, tratamientos quirúrgicos y procedimientos dentales realizados por especialistas certificados."
+                    video={videoApiceptiomia}
                 />
             </div>
         </section>

@@ -3,7 +3,7 @@ import ServicesDesc from "../ui/ServicesDesc";
 function OurServices() {
   return (
     <section>
-      <div className="flex flex-col gap-10 md:h-screen md:items-center md:justify-center">
+      <div className="flex flex-col gap-10 md:h-full md:items-center md:justify-center">
         <h2 className="px-4 text-center text-[32px] md:text-[40px] lg:text-[54px]">
           Tratamientos y servicios <b className="font-bold">odontológicos</b>
         </h2>

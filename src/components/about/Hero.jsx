@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <Navbar color="text-primary" logoColor={logoClinicaDark} />
-      <section className="flex h-screen flex-col items-center justify-around overflow-hidden px-8 gap-8 ">
+      <section className="flex h-screen flex-col items-center justify-center overflow-hidden px-8 gap-8 ">
         <div className="flex flex-col items-center justify-center gap-4 text-center">
           <div className="self-stretch justify-start text-center">
             <span className="text-primary font-light uppercase text-[40px] md:text-[80px] lg:text-[108px]">
