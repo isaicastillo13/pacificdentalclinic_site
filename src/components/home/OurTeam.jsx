@@ -1,6 +1,10 @@
 import React from "react";
 import Card from "../ui/Card.jsx";
 import BlurText from "../animations/BlurText.jsx";
+import imgGlroia from "../../assets/image/dragloria.webp";
+import imgMonica from "../../assets/image/dramonica.webp";
+import imgPasquale from "../../assets/image/drpasquale.webp";
+import imgMoises from "../../assets/image/drmoises.webp";
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
@@ -34,10 +38,10 @@ function OurTeam() {
           
         "
       >
-        <Card name="Dra. Gloria Ho" specialization="Odontologa" />
-        <Card name="Dra. Monica Shedden" specialization="Odontologa" />
-        <Card name="Asistente" specialization="Odontologa" />
-        <Card name="Asistente" specialization="Odontologa" />
+        <Card img={imgGlroia} name="Dra. Gloria Ho" specialization="Ortodoncista" />
+        <Card img={imgMonica} name="Dra. Monica Shedden" specialization="Periodoncista" />
+        <Card img={imgPasquale} name="Dr. Pasquale Calvosa" specialization="Prostodoncista" />
+        <Card img={imgMoises} name="Dr. Moises Lukowiecki" specialization="Endodoncista" />
       </div>
 
       {/* Footer Section */}
