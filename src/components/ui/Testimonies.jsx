@@ -25,10 +25,9 @@ function Testimonies() {
           className="h-12 mx-auto"
         />
         <figure className="mt-10">
-          <blockquote className="text-center text-xl/8 font-semibold text-primary sm:text-2xl/9">
-            <p className='font-light'>
-              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-              molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+          <blockquote className="font-semibold text-primary">
+            <p className='font-light text-[10px] md:text-[12px] lg:text-[16px]'>
+              “Desde que llegué a Pacific Dental Clinic me sentí en buenas manos. El personal fue sumamente amable y profesional en todo momento. Me explicaron cada paso del tratamiento con claridad y siempre se aseguraron de que estuviera cómodo y sin dolor. Se nota que realmente se preocupan por sus pacientes. La clínica está impecable y con tecnología moderna, lo que me dio aún más confianza. ¡Definitivamente volveré y la recomiendo al 100%!"
             </p>
           </blockquote>
           <figcaption className="mt-10">
@@ -38,11 +37,11 @@ function Testimonies() {
               className="mx-auto size-10 rounded-full"
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-              <div className="font-semibold text-primary">Judith Black</div>
+              <p className="font-semibold text-primary text-[10px] md:text-[12px] lg:text-[16px]">María Fernanda R</p>
               <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className="fill-pritext-primary">
                 <circle r={1} cx={1} cy={1} />
               </svg>
-              <div className="text-gray-600">CEO of Workcation</div>
+              {/* <p className="text-primary text-[10px] md:text-[12px] lg:text-[16px]">CEO of Workcation</p> */}
             </div>
           </figcaption>
         </figure>

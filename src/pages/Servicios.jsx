@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../components/services/Hero.jsx';
 import Services from '../components/services/OurServices.jsx';
-import Testimonies from '../components/services/Testimonies.jsx';
+import Testimonies from '../components/ui/Testimonies.jsx';
 import Procedures from '../components/services/Procedures.jsx';
 import BannerContact from '../components/services/BannerContact.jsx';
 
