@@ -17,7 +17,7 @@ function Services() {
         </div>
         <div className="mx-auto grid w-2/3 gap-8 p-4 md:grid md:gap-8 md:p-4 md:w-full lg:grid-cols-2">
           <ServicesDesc
-            abreviatura="ORT"
+            abreviatura="INV"
             servicio="Invisalign"
             descripcion="Corrige tu sonrisa con ortodoncia invisible. Somos especialistas certificados en Invisalign en Panamá."
           />
