@@ -16,7 +16,7 @@ function Hero() {
               TEAM
             </span>
           </div>
-          <h1 className="w-11/12 justify-start text-center font-light text-[10px] md:text-[12px] lg:text-[16px]">
+          <h1 className="w-11/12 justify-start text-center font-light text-[14px] lg:text-[16px]">
             Conoce al equipo de dentistas en Panamá que transforma sonrisas
           </h1>
         </div>

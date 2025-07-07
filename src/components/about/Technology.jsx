@@ -9,7 +9,7 @@ function Technology() {
           <b className="font-bold">Tecnología avanzada</b> para una odontología
           moderna en Panamá
         </h2>
-        <p className="text-[10px] md:text-[12px] lg:text-[16px] md:w-3/6 text-center md:text-left">
+        <p className="text-[14px] lg:text-[16px] md:w-3/6 md:text-left text-justify">
           En nuestra clínica dental contamos con tecnología de última generación
           para garantizar diagnósticos precisos, tratamientos efectivos y
           experiencias cómodas para cada paciente. Creemos en una odontología
@@ -42,6 +42,7 @@ function Technology() {
             figures="Tecnología NIRI"
             description="Detecta caries interproximales sin radiación ionizante (no invasivo)."
             color="bg-[#CBD3D6]"
+            textColor="text-primary"
           />
           <CardFigure
             figures="Imágenes intraorales"

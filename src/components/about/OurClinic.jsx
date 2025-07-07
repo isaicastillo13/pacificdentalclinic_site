@@ -11,7 +11,7 @@ function OurClinic() {
           <h2 className="text-[32px] text-neutralsligth md:text-[40px] lg:text-[54px] font-bold">
             ¡Diseñar sonrisas bellas es un arte que disfrutamos!
           </h2>
-          <p className="text-[10px] md:text-xs lg:text-base font-light text-neutralsligth  text-justify">
+          <p className="text-[14px] lg:text-[16px] font-light text-neutralsligth text-justify">
             En nuestra clínica, cada detalle ha sido cuidadosamente diseñado
             para ofrecerte una experiencia agradable desde el primer momento.
             Contamos con instalaciones modernas, amplias y climatizadas,

@@ -16,7 +16,7 @@ function History() {
               <span className="font-bold text-zinc-700">Nuestra Historia</span>
               <span>, Tu Confianza</span>
             </h2>
-            <p className=" text-justify text-[10px] font-light text-primary md:text-xs lg:text-base">
+            <p className=" text-justify font-light text-primary text-[14px] lg:text-[16px]">
               En 2006, con la inauguración del Hospital Pacífica Salud en Punta
               Pacífica, nació también nuestra clínica dental, con un sueño
               claro: ofrecer atención odontológica de calidad mundial en el
