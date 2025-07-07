@@ -20,7 +20,7 @@ function CardProcedures({ procedures, description, video }) {
           <h3 class="mb-2 text-[20px] md:text-[28px] font-bold text-primary w-full">
             {procedures}
           </h3>
-        <p class="text-primary text-[10px] md:text-[12px] lg:text-[16px]">
+        <p class="text-primary text-[10px] md:text-[12px] lg:text-[16px] text-justify">
           {description}
         </p>
       </div>

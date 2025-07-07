@@ -29,14 +29,21 @@ function History() {
               la salud bucal no solo se atiende, sino que se transforma en
               bienestar, confianza y una sonrisa renovada.
               <br />
-                <br />
+              <br />
+              Nos enorgullece ofrecer instalaciones modernas, limpias y seguras,
+              cumpliendo con los más altos estándares de bioseguridad. Cada
+              espacio está cuidadosamente diseñado para brindar comodidad y
+              tranquilidad, porque sabemos que una buena experiencia también
+              comienza por un entorno impecable.
+              <br />
+              <br />
               Con el paso del tiempo, nuestro equipo de especialistas fue
               creciendo, así como la confianza de nuestros pacientes.
               Incorporamos tecnología de punta, técnicas modernas y un enfoque
               centrado en el paciente, sin perder nunca nuestro trato humano y
               cercano.
               <br />
-                <br />
+              <br />
               Hoy, después de casi dos décadas, seguimos acompañando a cada
               persona que entra por nuestra puerta con el mismo compromiso que
               nos impulsó en 2006: cuidar tu sonrisa como si fuera la nuestra.

@@ -14,10 +14,10 @@ return (
         {/* Content */}
         <div className="relative flex flex-col items-center justify-center h-full z-10">
             <div className="flex flex-col items-center justify-center gap-4 w-3/6 text-center">
-                <h2 className="text-[32px] text-neutralsligth md:text-[40px] lg:text-[54px]">
+                <h2 className="text-[32px] text-neutralsligth md:text-[40px] lg:text-[54px] font-medium">
                     ¿Listo para transformar tu sonrisa?
                 </h2>
-                <p className="text-[10px] font-light text-neutralsligth md:text-xs lg:text-base">
+                <p className="text-[10px] font-light text-neutralsligth md:text-xs lg:text-base text-justify">
                     Da el primer paso hacia una sonrisa más saludable y segura. Nuestro equipo de dentistas en Panamá te espera con atención personalizada, tecnología avanzada y un ambiente cálido que te hará sentir en confianza desde el primer momento.
                 </p>
                 <a href="https://api.whatsapp.com/message/LKGBJRM3FAVOO1?autoload=1&app_absent=0">

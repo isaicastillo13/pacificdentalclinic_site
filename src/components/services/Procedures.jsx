@@ -30,7 +30,7 @@ function Procedures() {
                 />
                 <CardProcedure
                     procedures="Cirugias"
-                    description="Extracciones, tratamientos quirúrgicos y procedimientos dentales realizados por especialistas certificados."
+                    description="En nuestra clínica, también realizamos procedimientos quirúrgicos dentales cuando son necesarios para mejorar tu salud bucal."
                     video={videoApiceptiomia}
                 />
             </div>
