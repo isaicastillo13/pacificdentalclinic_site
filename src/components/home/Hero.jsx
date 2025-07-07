@@ -1,4 +1,4 @@
-import videoHero from "../../assets/video/HeroPDC.mp4";
+import videoHero from "../../assets/video/heroPdc.mp4";
 import pageBg from "../../assets/backgrounds/page-bg.svg";
 import iconoFlechaAbajo from '../../assets/icons/arrow-down-circle.svg';
 import Navbar from "../ui/NavBar";
@@ -17,9 +17,15 @@ function Hero() {
                 <video
                     className="absolute top-0 left-0 w-full h-full object-cover"
                     src={videoHero}
-                    autoPlay
-                    loop
-                    muted
+                    type="video/mp4"
+                  preload="metadata" // Solo carga los metadatos del video
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  loading="lazy" // Carga diferida (solo si el video está cerca de la vista)
+                  poster="video-poster.jpg"
                 />
 
                 {/* Capa de gradiente */}

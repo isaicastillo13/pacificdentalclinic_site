@@ -11,7 +11,7 @@ function Services() {
           <h2 className="text-[32px] md:text-[40px] lg:text-[54px] capitalize">
             Servicios <b className="font-bold">odontológicos especializados</b>
           </h2>
-          <h3 className="font-light text-[10px] md:text-xs lg:text-base text-justify">
+          <h3 className="font-light text-[14px] lg:text-[16px] text-justify">
             Atendemos todas tus necesidades dentales con tecnología de punta y profesionales altamente capacitados
           </h3>
         </div>

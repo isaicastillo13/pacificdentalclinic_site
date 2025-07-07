@@ -10,7 +10,7 @@ function OurNumbers() {
             <div className="mx-auto flex flex-col items-center justify-center md:w-11/12 md:flex-row md:gap-10">
                 {/* Experiencia */}
                 <div className="flex flex-col items-center gap-4">
-                    <p className="text-[10px] font-light md:text-xs lg:text-base">
+                    <p className="font-light text-[14px] lg:text-[16px]">
                         Al servicio de tu salud bucal
                     </p>
                     <p className="text-[32px] md:text-[40px] lg:text-[54px] font-bold">
@@ -19,7 +19,7 @@ function OurNumbers() {
                 </div>
                 {/* Sonrisas */}
                 <div className="flex flex-col items-center gap-4">
-                    <p className="text-[10px] font-light md:text-xs lg:text-base">
+                    <p className="font-light text-[14px] lg:text-[16px]">
                         Cada una con su propia historia.
                     </p>
                     <p className="text-[32px] md:text-[40px] lg:text-[54px] font-bold">
@@ -28,7 +28,7 @@ function OurNumbers() {
                 </div>
                 {/* Especialistas */}
                 <div className="flex flex-col items-center gap-4">
-                    <p className="text-[10px] font-light md:text-xs lg:text-base">
+                    <p className="font-light text-[14px] lg:text-[16px]">
                         Para darte la mejor atención nuestros
                     </p>
                     <p className="text-[32px] md:text-[40px] lg:text-[54px] font-bold">

@@ -23,9 +23,10 @@ function Banner() {
         </h2>
         <p
           className="
-          w-2/3
+          md:w-2/3
           font-light
-          text-[10px] md:text-xs lg:text-base
+          text-[14px] lg:text-[16px]
+          text-justify
         "
         >
           En nuestra clínica dental en Panamá ofrecemos atención personalizada,
@@ -33,13 +34,16 @@ function Banner() {
           Brindamos servicios que van desde odontología general hasta
           ortodoncia, estética dental y odontopediatría. Confía en nosotros para
           cuidar tu salud bucal con calidad y compromiso.
-        </p>
-      </div>
-      <div className="w-full flex justify-end pr-8">
+          <br />
+          <br />
+          <div className="w-full flex justify-end pr-8">
         <p className="font-light text-[10px] md:text-xs lg:text-base">
           -Pacific Dental Clinic
         </p>
       </div>
+        </p>
+      </div>
+      
     </section>
   );
 }

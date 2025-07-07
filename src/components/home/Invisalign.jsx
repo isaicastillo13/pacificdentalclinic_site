@@ -14,7 +14,7 @@ function Invisalign() {
       >
         <p
           className="
-          text-left font-light text-[10px] md:text-xs lg:text-base
+          text-left font-light text-[14px] lg:text-[16px]
           md:w-64 lg:w-80
         "
         >
@@ -65,7 +65,7 @@ function Invisalign() {
         >
           <p
             className="
-            text-justify font-light text-[10px] md:text-xs lg:text-base
+            text-justify font-light text-[14px] lg:text-[16px]
           "
           >
             Invisalign ha revolucionado la ortodoncia en Panamá, ofreciendo una
@@ -80,7 +80,7 @@ function Invisalign() {
           <h3 className="mt-2 text-4xl">¿Qué es Invisalign y Cómo Funciona?</h3>
           <p
             className="
-            text-justify font-light text-[10px] md:text-xs lg:text-base
+            text-justify font-light text-[14px] lg:text-[16px]
           "
           >
             Este sistema de ortodoncia se basa en el uso de alineadores

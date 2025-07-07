@@ -7,7 +7,7 @@ function ServicesDesc({abreviatura,servicio, descripcion})  {
                 <span className="bg-primary text-neutralsligth font-bold p-2 rounded-s-2xl uppercase ">{abreviatura}</span>
                 <h3 className="font-bold">{servicio}</h3>
             </div>
-            <p className="text-justify font-light text-[10px] md:text-[12px] lg:text-[16px]">{descripcion}</p>
+            <p className="text-justify font-light text-[14px] lg:text-[16px]">{descripcion}</p>
         </div>
     );
 }

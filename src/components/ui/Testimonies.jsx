@@ -29,7 +29,7 @@ function Testimonies() {
         />
         <figure className="mt-10">
           <blockquote className="font-semibold text-primary">
-            <p className="font-light text-[10px] md:text-[12px] lg:text-[16px]">
+            <p className="font-light text-[14px] lg:text-[16px]">
               “I was in Panama and had tooth pain. I called and got an
               appointment within a couple of days. It was discovered that my
               tooth was broken in half. I received a crown lengthening, bonding,
