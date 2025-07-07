@@ -17,7 +17,7 @@ return (
                 <h2 className="text-[32px] text-neutralsligth md:text-[40px] lg:text-[54px] font-medium">
                     ¿Listo para transformar tu sonrisa?
                 </h2>
-                <p className="text-[10px] font-light text-neutralsligth md:text-xs lg:text-base text-justify">
+                <p className="font-light text-neutralsligth text-[14px] lg:text-[16px] text-justify">
                     Da el primer paso hacia una sonrisa más saludable y segura. Nuestro equipo de dentistas en Panamá te espera con atención personalizada, tecnología avanzada y un ambiente cálido que te hará sentir en confianza desde el primer momento.
                 </p>
                 <a href="https://api.whatsapp.com/message/LKGBJRM3FAVOO1?autoload=1&app_absent=0">

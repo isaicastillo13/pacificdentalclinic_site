@@ -11,7 +11,7 @@ function Procedures() {
                    Conoce cómo cuidamos tu sonrisa: {" "}
                     <b className="font-bold">procedimientos dentales en acción</b>
                 </h2>
-                <p className="max-w-5/6 text-xs md:text-sm lg:text-base text-center">
+                <p className="max-w-5/6 text-[14px] lg:text-[16px] text-center">
                     Conoce paso a paso cómo realizamos nuestros tratamientos dentales más solicitados. Videos reales de nuestros especialistas en acción, tecnología de vanguardia y resultados visibles.
                 </p>
             </div>

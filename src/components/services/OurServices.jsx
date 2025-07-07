@@ -2,12 +2,12 @@ import ServicesDesc from "../ui/ServicesDesc";
 
 function OurServices() {
   return (
-    <section>
+    <section className="px-8">
       <div className="flex flex-col gap-10 md:h-full md:items-center md:justify-center">
         <h2 className="px-4 text-center text-[32px] md:text-[40px] lg:text-[54px]">
           Tratamientos y servicios <b className="font-bold">odontológicos</b>
         </h2>
-        <p className="text-center text-[10px] md:text-xs lg:text-base">
+        <p className="text-center text-[14px] lg:text-[16px]">
           Descubre todas las soluciones que ofrecemos para el cuidado completo
           de tu salud bucal, desde la prevención hasta la estética dental
           avanzada.

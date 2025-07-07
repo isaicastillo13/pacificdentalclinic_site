@@ -19,7 +19,7 @@ function Hero() {
                         SERVICIOS
                     </span>
                 </div>
-                <h1 className="w-11/12 text-[10px] md:text-[12px] lg:text-[16px] font-light text-center">
+                <h1 className="w-11/12 text-[14px] lg:text-[16px] font-light text-center">
                     Servicios odontológicos con atención personalizada y tecnología avanzada
                 </h1>
             </div>
