@@ -12,7 +12,7 @@ function Hero() {
             <span className="text-primary font-light uppercase text-[40px] md:text-[80px] lg:text-[108px]">
               PACIFIC{" "}
             </span>
-            <span className="bg-gradient-to-r from-primary from-0% via-[#486488] via-60% to-neutralsligth to-90% bg-clip-text font-medium uppercase text-transparent text-[40px] md:text-[80px] lg:text-[108px]">
+            <span className="bg-gradient-to-r from-primary from-0% via-[#486488] via-60% to-neutralsligth to-100% bg-clip-text font-medium uppercase text-transparent text-[40px] md:text-[80px] lg:text-[108px]">
               TEAM
             </span>
           </div>
