@@ -16,7 +16,7 @@ function OurTeam() {
       {/* Header Section */}
       <div className="pt-28 flex flex-col items-center justify-center text-center p-6">
         <BlurText
-          text="Contamos con un equipo multidisciplinario de odontólogos, ortodoncistas y especialistas comprometidos con tu salud bucal."
+          text="Disponemos de un equipo multidisciplinario de odontólogos, ortodoncistas y especialistas, todos comprometidos con tu salud bucal."
           delay={150}
           animateBy="words"
           direction="top"
@@ -53,7 +53,7 @@ function OurTeam() {
           PACIFIC TEAM
         </h3>
         <p className="text-center font-light text-[10px] md:text-xs lg:text-base">
-          Para darte la mejor atencion
+         Para darte la mejor atención
         </p>
       </div>
     </section>

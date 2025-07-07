@@ -5,7 +5,7 @@ function OurNumbers() {
     return (
         <section className="flex flex-col items-center justify-center gap-20 p-6 md:h-screen">
             <h2 className="w-4/5 text-center font-light text-[32px] md:text-[40px] lg:text-[54px]">
-                Nuestra trayectoria como <b className="font-bold">dentistas en Panamá</b> nos respalda.
+                Nuestra trayectoria como <b className="font-bold">dentistas en Panamá</b> nos respalda
             </h2>
             <div className="mx-auto flex flex-col items-center justify-center md:w-11/12 md:flex-row md:gap-10">
                 {/* Experiencia */}

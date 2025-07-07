@@ -37,21 +37,6 @@ function Hero() {
                 <span className="text-[40px] uppercase md:text-[80px] lg:text-[108px]">Pacific Dental</span>
                 <span className="text-[40px] uppercase md:text-[80px] lg:text-[108px]">Clinic</span>
             </div>
-
-            {/* Footer del Hero */}
-            <div className="absolute top-0 left-0 z-10 flex h-full w-full items-end justify-between gap-8 p-10 text-neutral-50 md:gap-0">
-                <h1 className="font-light text-[10px] md:w-44 md:text-[12px] lg:w-md lg:text-[16px]">
-                    Clínica de odontología en Panamá con tratamientos innovadores y atención especializada
-                </h1>
-                <img
-                    className="hidden md:block"
-                    src={iconoFlechaAbajo}
-                    alt="icono flecha hacia abajo"
-                />
-                <h2 className="font-light text-[10px] md:w-44 md:text-[12px] lg:w-md lg:text-[16px]">
-                    Descubre por qué somos una de las mejores clínicas dentales en Panamá. Servicios personalizados en ortodoncia, odontopediatría, estética dental y más.
-                </h2>
-            </div>
         </section>
     );
 }
