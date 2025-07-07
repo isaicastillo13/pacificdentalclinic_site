@@ -1,4 +1,4 @@
-import videoHero from "../../assets/video/heroPdc.mp4";
+import videoHero from "../../assets/video/heroVideo.mp4";
 import pageBg from "../../assets/backgrounds/page-bg.svg";
 import iconoFlechaAbajo from '../../assets/icons/arrow-down-circle.svg';
 import Navbar from "../ui/NavBar";
