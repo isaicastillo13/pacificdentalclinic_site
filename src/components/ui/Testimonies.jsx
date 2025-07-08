@@ -1,6 +1,18 @@
 import logoPcd from "../../assets/logo/logo-pacificdentalclinic-oscuro.webp";
+import { useEffect, useState } from "react";
 
 function Testimonies() {
+  const [testimonies, setTestimonies] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5001/api/testimonials")
+      .then((res) => res.json())
+      .then((data) => {
+        setTestimonies(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching testimonies:", error);
+      });
+  }, []);
   return (
     <section className=" h-screen flex justify-center items-center relative isolate overflow-hidden bg-neutralsligth px-6 py-24 sm:py-32 lg:px-8">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-10" />
