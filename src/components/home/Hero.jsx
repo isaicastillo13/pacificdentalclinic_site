@@ -17,17 +17,13 @@ function Hero() {
                 <video
                     className="absolute top-0 left-0 w-full h-full object-cover"
                     src={videoHero}
-                    type="video/mp4"
-                  preload="metadata" // Solo carga los metadatos del video
-                  controls
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  loading="lazy" // Carga diferida (solo si el video está cerca de la vista)
-                  poster="video-poster.jpg"
+                    preload="metadata"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster="video-poster.jpg"
                 />
-
                 {/* Capa de gradiente */}
                 <div
                     className="absolute top-0 left-0 w-full h-full opacity-50"
