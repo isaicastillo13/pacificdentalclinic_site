@@ -1,13 +1,13 @@
-const express = require('express');
+const express = require("express");
+const dontenv = require("dotenv");
+const connectDB = require("./models/db");
 const app = express();
-const port = 8080;
 
-// Define a route for GET requests to the root URL
-app.get('/', (req, res) => {
-  res.send('Hello World from Express!');
-});
+dontenv.config();
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+connectDB();
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
