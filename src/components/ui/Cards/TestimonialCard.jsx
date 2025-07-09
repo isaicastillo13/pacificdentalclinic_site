@@ -12,7 +12,7 @@ function CardTestimonies({
         PAN: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/512px-Flag_of_Panama.svg.png",
      }
     return(
-        <figure className="mt-10">
+        <figure className="mt-10 p-8">
           <blockquote className="font-semibold text-primary">
             <p className="font-light text-[14px] lg:text-[16px] text-justify">
                 {message}

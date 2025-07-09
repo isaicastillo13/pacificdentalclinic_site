@@ -10,7 +10,7 @@ export default function Testimonials() {
   
   console.log("Usando API_URL:", API_URL);
   useEffect(() => {
-    fetch('https://clinic-backend-mqgy.onrender.com/api/testimonials')
+    fetch(`${API_URL}/api/testimonials`)
       .then((res) => res.json())
       .then((data) => {
         const formattedItems = data.map((item) => ({

@@ -1,8 +1,6 @@
 import { useEffect, useState, useRef } from "react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import CardTestimonies from "./Cards/TestimonialCard";
-
-// replace icons with your own if needed
 import {
   FiCircle,
   FiCode,
@@ -11,7 +9,6 @@ import {
   FiLayout,
 } from "react-icons/fi";
 
-TODO: "Crear todos los card con los datos de la base de datos";
 const DEFAULT_ITEMS = [];
 
 const DRAG_BUFFER = 0;
@@ -28,18 +25,33 @@ export default function Carousel({
   loop = false,
   round = false,
 }) {
-  console.log("Estos es lo que recibi de testimonies", items);
-  const containerPadding = 16;
-  const itemWidth = baseWidth - containerPadding * 2;
-  const trackItemOffset = itemWidth + GAP;
-
-  const carouselItems = loop ? [...items, items[0]] : items;
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
   const x = useMotionValue(0);
+
+  const [containerWidth, setContainerWidth] = useState(baseWidth);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
 
-  const containerRef = useRef(null);
+  const containerPadding = 16;
+  const itemWidth = containerWidth - containerPadding * 2;
+  const trackItemOffset = itemWidth + GAP;
+
+  const carouselItems = loop ? [...items, items[0]] : items;
+
+  // 🧠 Detectar el ancho del contenedor responsivamente
+  useEffect(() => {
+    const handleResize = () => {
+      if (containerRef.current) {
+        const width = containerRef.current.offsetWidth;
+        setContainerWidth(width);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     if (pauseOnHover && containerRef.current) {
       const container = containerRef.current;
@@ -119,13 +131,10 @@ export default function Carousel({
 
   return (
     <div
-      ref={containerRef}
-      className={`relative overflow-hidden p-4 `}
-      style={{
-        width: `${baseWidth}px`,
-        ...(round && { height: `${baseWidth}px` }),
-      }}
-    >
+  ref={containerRef}
+  className="relative overflow-hidden w-full max-w-screen-sm md:max-w-[500px]  xl:max-w-[700px] mx-auto px-4 sm:px-6 lg:px-8"
+>
+
       <motion.div
         className="flex"
         drag="x"
@@ -133,10 +142,6 @@ export default function Carousel({
         style={{
           width: itemWidth,
           gap: `${GAP}px`,
-          perspective: 1000,
-          perspectiveOrigin: `${
-            currentIndex * trackItemOffset + itemWidth / 2
-          }px 50%`,
           x,
         }}
         onDragEnd={handleDragEnd}
@@ -144,39 +149,27 @@ export default function Carousel({
         transition={effectiveTransition}
         onAnimationComplete={handleAnimationComplete}
       >
-        {carouselItems.map((item, index) => {
-          const range = [
-            -(index + 1) * trackItemOffset,
-            -index * trackItemOffset,
-            -(index - 1) * trackItemOffset,
-          ];
-          const outputRange = [90, 0, -90];
-          // eslint-disable-next-line react-hooks/rules-of-hooks
-          // const rotateY = useTransform(x, range, outputRange, { clamp: false });
-          return (
-            <motion.div
-              key={index}
-              className={`relative shrink-0 flex flex-col ${
-                round
-                  ? "items-center justify-center text-center "
-                  : "items-start justify-between"
-              } overflow-hidden cursor-grab active:cursor-grabbing`}
-              style={{
-                width: itemWidth,
-                // rotateY: rotateY,
-                ...(round && { borderRadius: "50%" }),
-              }}
-              transition={effectiveTransition}
-            >
-              <CardTestimonies
-                nameClient={item.name}
-                message={item.message}
-                abreviation={item.abreviation}
-              />
-            </motion.div>
-          );
-        })}
+        {carouselItems.map((item, index) => (
+          <motion.div
+            key={index}
+            className={`relative shrink-0 flex flex-col items-center justify-center overflow-hidden cursor-grab active:cursor-grabbing`}
+            style={{
+              width: itemWidth,
+              minWidth: 0,
+              ...(round && { borderRadius: "50%" }),
+            }}
+            transition={effectiveTransition}
+          >
+            <CardTestimonies
+              nameClient={item.name}
+              message={item.message}
+              abreviation={item.abreviation}
+            />
+          </motion.div>
+        ))}
       </motion.div>
+
+      {/* Paginación inferior */}
       <div
         className={`flex w-full justify-center ${
           round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""
