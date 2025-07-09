@@ -5,9 +5,10 @@ import TestimonialsSection from "./TestimonialsSection"; // Asumiendo que tienes
 
 export default function Testimonials() {
   const [items, setItems] = useState([]);
+  const API_URL = import.meta.env.VITE_API_URL
 
   useEffect(() => {
-    fetch("http://localhost:5001/api/testimonials")
+    fetch(`${API_URL}/api/testimonials`)
       .then((res) => res.json())
       .then((data) => {
         const formattedItems = data.map((item) => ({
