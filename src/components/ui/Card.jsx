@@ -1,6 +1,5 @@
 import React from 'react';
-import iconRadioButtom from '../../assets/icons/radio-buttom.svg'; // Importa la imagen del icono
-import imagenFondo from '../../assets/image/imgTest.jpg'; // Importa una imagen de fondo por defecto
+import iconRadioButtom from '../../assets/icons/radio-buttom.svg'; // Importa la imagen del icono// Importa una imagen de fondo por defecto
 
 function Card({ name, specialization, img = imagenFondo}) {
     return(

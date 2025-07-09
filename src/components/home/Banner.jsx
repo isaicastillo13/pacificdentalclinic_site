@@ -36,14 +36,8 @@ function Banner() {
           cuidar tu salud bucal con calidad y compromiso.
           <br />
           <br />
-          <div className="w-full flex justify-end pr-8">
-        <p className="font-light text-[10px] md:text-xs lg:text-base">
-          -Pacific Dental Clinic
         </p>
       </div>
-        </p>
-      </div>
-      
     </section>
   );
 }

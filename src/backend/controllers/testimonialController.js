@@ -22,6 +22,7 @@ const getTestimonials = async (req, res) => {
     try{
         const testimonial = await Testimonial.find(); // Obtener todos los testimonios
         res.status(200).json(testimonial); // Responder con los testimonios encontrados
+        console.log(testimonial);
     }catch (error) {
       console.error("Error fetching testimonials:", error);
       return res.status(500).json({ message: "Internal server error" });
