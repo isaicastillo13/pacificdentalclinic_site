@@ -1,5 +1,5 @@
 import fondoClinica from "../../assets/backgrounds/fondoClinica.webp";
-import ContactSection from "./Contact/ContactSection";
+import ContactSection from "../ui/Contact/ContactSection";
 import React from "react";
 
 function OurClinic() {
@@ -23,7 +23,6 @@ function OurClinic() {
             </p>
           </div>
         </div>
-        <ContactSection />
       </section>
     </>
   );

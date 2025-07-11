@@ -5,18 +5,24 @@ import imgGlroia from "../../assets/image/dragloria.webp";
 import imgMonica from "../../assets/image/dramonica.webp";
 import imgPasquale from "../../assets/image/drpasquale.webp";
 import imgMoises from "../../assets/image/drmoises.webp";
+import imgKira from "../../assets/image/drakira.webp";
+import LogoCarousel from "../ui/LogoCarousel.jsx";
+
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
 };
 
+
+
 function OurTeam() {
   return (
+    <>
     <section className="">
       {/* Header Section */}
-      <div className="pt-28 flex flex-col items-center justify-center text-center p-6">
+      <div className="flex flex-col items-center justify-center p-6 text-center pt-28">
         <BlurText
-          text="Disponemos de un equipo multidisciplinario de odontólogos, ortodoncistas y especialistas, todos comprometidos con tu salud bucal."
+          text="Disponemos de un equipo multidisciplinario de odontólogos, especialistas, todos comprometidos con tu salud bucal."
           delay={150}
           animateBy="words"
           direction="top"
@@ -30,26 +36,22 @@ function OurTeam() {
 
       {/* Team Cards Section */}
       <div
-        className="
-          pt-10
-          flex flex-col items-center justify-center gap-4
-          md:grid md:grid-cols-2
-          lg:flex lg:flex-row
-          
-        "
+        className="flex flex-col items-center justify-center gap-4 pt-10 md:grid md:grid-cols-2 lg:flex lg:flex-row"
       >
         <Card img={imgGlroia} name="Dra. Gloria Ho" specialization="Ortodoncista" />
         <Card img={imgMonica} name="Dra. Monica Shedden" specialization="Periodoncista" />
         <Card img={imgPasquale} name="Dr. Pasquale Calvosa" specialization="Prostodoncista" />
         <Card img={imgMoises} name="Dr. Moises Lukowiecki" specialization="Endodoncista" />
+        <Card img={imgKira} name="Dra. Kira Singh" specialization="Odontopediatra" />
       </div>
+
 
       {/* Footer Section */}
       <div className="mt-16 p-8 flex items-center justify-around gap-8 text-neutral-50 bg-gradient-to-r from-[#121922] to-[#486488]">
         <p className="text-center font-light text-[14px] lg:text-[16px]">
           Nuestros Profesionales
         </p>
-        <h3 className="text-center text-2xl md:text-3xl lg:text-4xl">
+        <h3 className="text-2xl text-center md:text-3xl lg:text-4xl">
           PACIFIC TEAM
         </h3>
         <p className="text-center font-light text-[14px] lg:text-[16px]">
@@ -57,6 +59,8 @@ function OurTeam() {
         </p>
       </div>
     </section>
+    </>
+    
   );
 }
 

@@ -34,20 +34,20 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`absolute top-0 z-50 backdrop-blur flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
+    <nav className={`absolute top-0 z-50 backdrop-blur-[4px] flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
       <div>
         <a href="/" aria-label="Inicio">
           <img
             src={logoColor}
             alt="logo de la clinica"
-            className="h-12 w-auto "
+            className="w-auto h-12 "
             loading="lazy"
           />
         </a>
       </div>
 
       <button
-            className="md:hidden flex items-center px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+            className="flex items-center px-2 py-1 rounded md:hidden focus:outline-none focus:ring-2 focus:ring-primary"
             aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen(!menuOpen)}
@@ -82,7 +82,7 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
       {/* Mask background when menu is open */}
       {menuOpen && (
         <div
-          className="fixed inset-0 bg-transparent bg-opacity-60 z-40"
+          className="fixed inset-0 z-40 bg-transparent bg-opacity-60"
           onClick={() => setMenuOpen(false)} // Close the menu when the mask is clicked
         />
       )}
@@ -94,20 +94,20 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
             <img
               src={logoClinicaDark}
               alt="logo de la clinica"
-              className="h-12 w-auto "
+              className="w-auto h-12 "
               loading="lazy"
             />
           </a>
 
           {/* Hamburger button for mobile */}
           <button
-            className="md:hidden flex items-center px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-primary z-60"
+            className="flex items-center px-2 py-1 rounded md:hidden focus:outline-none focus:ring-2 focus:ring-primary z-60"
             aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg
-              className="h-8 w-8 "
+              className="w-8 h-8 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -136,7 +136,7 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
 
 
         {/* Menu items for mobile */}
-        <ul className="mt-28 flex h-screen flex-col items-center space-y-4 text-2xl">
+        <ul className="flex flex-col items-center h-screen space-y-4 text-2xl mt-28">
             {menuItems.map((item) => (
                 <li key={item.label}>
                     <a
@@ -151,7 +151,7 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
         
       </div>
       {/* Desktop Menu */}
-      <div className="hidden md:flex space-x-8">
+      <div className="hidden space-x-8 md:flex">
         {menuItems.map((item) => (
           <a
             key={item.label}

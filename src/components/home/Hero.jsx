@@ -15,14 +15,14 @@ function Hero() {
                 {/* Navbar y Video de fondo */}
                 <Navbar />
                 <video
-                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    className="absolute top-0 left-0 object-cover w-full h-full"
                     src={videoHero}
                     preload="metadata"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    poster="video-poster.jpg"
+                    // poster="video-poster.jpg"
                 />
                 {/* Capa de gradiente */}
                 <div
@@ -35,7 +35,7 @@ function Hero() {
             </div>
 
             {/* Contenido principal */}
-            <div className="absolute top-0 left-0 z-10 flex h-full w-full flex-col items-center justify-around text-neutral-50">
+            <div className="absolute top-0 left-0 z-10 flex flex-col items-center justify-around w-full h-full text-neutral-50">
                 <span className="text-[40px] uppercase md:text-[80px] lg:text-[108px]">Pacific Dental</span>
                 <span className="text-[40px] uppercase md:text-[80px] lg:text-[108px]">Clinic</span>
             </div>
