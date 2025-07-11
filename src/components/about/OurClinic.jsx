@@ -1,9 +1,11 @@
 import fondoClinica from "../../assets/backgrounds/fondoClinica.webp";
+import ContactSection from "./Contact/ContactSection";
 import React from "react";
 
 function OurClinic() {
   return (
-    <section className="h-screen overflow-hidden bg-cover bg-center"  style={{ backgroundImage: `url(${fondoClinica})` }}>
+    <>
+    <section className="h-screen bg-cover bg-center"  style={{ backgroundImage: `url(${fondoClinica})` }}>
       <div
         className="flex flex-col items-center justify-center h-full bg-cover bg-center bg-gradient-to-b from-gray-900/40 to-gray-900"
       >
@@ -20,7 +22,11 @@ function OurClinic() {
           </p>
         </div>
       </div>
+      <ContactSection/>
+    
     </section>
+    
+    </>
   );
 }
 

@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const cors = require("cors");
+const emailRoutes = require("./routes/emailRoutes");
 
 dotenv.config(); // Cargar las variables de entorno
 connectDB(); // Conectar a la base de datos
@@ -15,13 +16,14 @@ const corsOptions = {
   allowedHeaders: ["Content-Type"],
 };
 
+// Middlewares
 app.use(cors(corsOptions)); // Usar CORS con opciones
-
 app.use(express.json()); // Middleware para parsear JSON
 
 // Rutas
 const testimonialRoutes = require("./routes/testimonialRoutes");
 app.use("/api/testimonials", require("./routes/testimonialRoutes"));
+app.use("/api", emailRoutes); // Rutas para el envío de correos electrónicos
 
 // Log para verificar si la solicitud está llegando al servidor
 app.use((req, res, next) => {
