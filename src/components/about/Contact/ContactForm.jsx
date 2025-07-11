@@ -57,9 +57,9 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-4 m-10 ">
-      <div className="grid md:grid-cols-2 md:gap-6 gap-4">
-        <div className="relative z-0 w-full grou gap-1">
+    <form onSubmit={handleSubmit} className="w-full max-w-lg m-10 space-y-4 ">
+      <div className="grid gap-4 md:grid-cols-2 md:gap-6">
+        <div className="relative z-0 w-full gap-1 grou">
           <input
             type="text"
             name="name"
@@ -67,9 +67,15 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             placeholder=" "
-            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
+            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-neutralsligth dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
           />
-          <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-blue-600">
+          <label
+            htmlFor="name"
+            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform 
+  -translate-y-6 scale-75 top-3 origin-[0] 
+  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+  peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-blue-600"
+          >
             Nombre completo
           </label>
         </div>
@@ -82,9 +88,14 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             placeholder=" "
-            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
+            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-neutralsligth dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
           />
-          <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-blue-600">
+          <label
+            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform 
+  -translate-y-6 scale-75 top-3 origin-[0] 
+  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+  peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-blue-600"
+          >
             Correo electrónico
           </label>
         </div>
@@ -98,9 +109,14 @@ export default function ContactForm() {
           required
           rows={4}
           placeholder=" "
-          className="resize-none block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
+          className="resize-none block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-neutralsligth dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
         />
-        <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-blue-600">
+        <label
+          className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform 
+  -translate-y-6 scale-75 top-3 origin-[0] 
+  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+  peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-blue-600"
+        >
           Mensaje
         </label>
       </div>
@@ -128,12 +144,12 @@ export default function ContactForm() {
       </button>
 
       {status === "success" && (
-        <p className="text-green-600 bg-green-50 p-4 rounded-full text-center text-sm md:text-base">
+        <p className="p-4 text-sm text-center text-green-600 rounded-full bg-green-50 md:text-base">
           Mensaje enviado correctamente 🥳.
         </p>
       )}
       {status === "error" && (
-        <p className="text-red-600 bg-red-50 p-4 rounded-full text-center text-sm md:text-base">
+        <p className="p-4 text-sm text-center text-red-600 rounded-full bg-red-50 md:text-base">
           Ocurrió un error al enviar el mensaje 😅.
         </p>
       )}
