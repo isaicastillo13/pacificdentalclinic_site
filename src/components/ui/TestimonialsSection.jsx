@@ -7,7 +7,7 @@ import { FiCircle } from "react-icons/fi";
 const DEFAULT_ITEMS = [
   {
     name: "Rut Davis",
-    menssage:
+    message:
       "I was in Panama and had tooth pain. I called and got an appointment within a couple of days. It was discovered that my tooth was broken in half. I received a crown lengthening, bonding, and a cleaning—all at a great price. I'm glad this happened in Panama and not at home. When the bonding came off, it was replaced free of charge, with no further issues. The staff and the doctor were very friendly and respectful. I think it's definitely worth returning to Panama for my dental care.",
     abreviation: "US",
     id: "1",
