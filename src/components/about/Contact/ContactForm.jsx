@@ -57,8 +57,8 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-4 m-10">
-      <div className="grid md:grid-cols-2 md:gap-6">
+    <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-4 m-10 ">
+      <div className="grid md:grid-cols-2 md:gap-6 gap-4">
         <div className="relative z-0 w-full group">
           <input
             type="text"
