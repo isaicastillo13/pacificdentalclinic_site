@@ -1,4 +1,3 @@
-import videooptimizado from "../../assets/video/video-optimizado.mp4";
 import pageBg from "../../assets/backgrounds/page-bg.svg";
 import Navbar from "../ui/NavBar";
 
