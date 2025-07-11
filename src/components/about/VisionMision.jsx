@@ -24,50 +24,52 @@ function VisionMision() {
       <div className="flex flex-col items-center justify-center gap-4 p-10 md:flex-row md:gap-10 lg:gap-20 lg:p-20 bg">
         {/* vision */}
         <div className="flex flex-col gap-10">
-            <img className="w-8" src={quotes} alt="icono de comillas" />
-            <h3 className="font-medium text-[22px] md:text-[24px] lg:text-[32px]">Visión</h3>
-            <p className="text-justify text-[14px] lg:text-[16px]">
-                Ser una clínica odontológica reconocida por transformar la
-                experiencia dental en algo humano, confiable y accesible, donde cada
-                sonrisa sea reflejo de nuestro compromiso con la salud bucal y la
-                innovación constante.
-                <br />
-                <br />
-                A lo largo de los años, hemos construido esa visión combinando
-                tecnología de punta con un trato cálido y personalizado. Hemos
-                formado un equipo de profesionales apasionados por su labor, que se
-                actualizan constantemente para ofrecer tratamientos eficaces y
-                mínimamente invasivos. Gracias a la confianza de nuestros pacientes
-                y la mejora continua de nuestros procesos, hoy somos más que una
-                clínica: somos un espacio donde las sonrisas se cuidan con
-                dedicación y empatía.
-            </p>
-            <div
-                className="self-stretch h-48 w-full rounded-[20px] bg-cover bg-center"
-                style={{ backgroundImage: `url(${fondoPlant2})` }}
-            />
+          <img className="w-8" src={quotes} alt="icono de comillas" />
+          <h3 className="font-medium text-[22px] md:text-[24px] lg:text-[32px]">
+            Visión
+          </h3>
+          <p className="text-justify text-[14px] lg:text-[16px]">
+            Ser una clínica odontológica reconocida por transformar la
+            experiencia dental en algo humano, confiable y accesible, donde cada
+            sonrisa sea reflejo de nuestro compromiso con la salud bucal y la
+            innovación constante.
+            <br />
+            <br />A lo largo de los años, hemos construido esa visión combinando
+            tecnología de punta con un trato cálido y personalizado. Hemos
+            formado un equipo de profesionales apasionados por su labor, que se
+            actualizan constantemente para ofrecer tratamientos eficaces y
+            mínimamente invasivos. Gracias a la confianza de nuestros pacientes
+            y la mejora continua de nuestros procesos, hoy somos más que una
+            clínica: somos un espacio donde las sonrisas se cuidan con
+            dedicación y empatía.
+          </p>
+          <div
+            className="self-stretch h-48 w-full rounded-[20px] bg-cover bg-center"
+            style={{ backgroundImage: `url(${fondoPlant2})` }}
+          />
         </div>
         {/* mision */}
         <div className="flex flex-col justify-center gap-10 bg-primary p-12 md:h-[700px] rounded-[20px] text-neutralsligth">
           <div className="flex items-center justify-end gap-2">
-            <h3 className="font-medium text-[20px] md:text-[24px] lg:text-[32px]">Mision</h3>
+            <h3 className="font-medium text-[20px] md:text-[24px] lg:text-[32px]">
+              Mision
+            </h3>
             <img src={sun} alt="" />
           </div>
           <p className="text-justify text-[14px] lg:text-[16px]">
             Brindar atención odontológica integral, ética y de calidad, enfocada
             en la prevención, el diagnóstico preciso y tratamientos
             personalizados, para mejorar la salud bucal y la calidad de vida de
-            cada paciente. 
+            cada paciente.
             <br />
             <br />
-            Desde nuestros inicios, hemos trabajado con pasión y
-            profesionalismo para que cada visita al dentista sea una experiencia
-            positiva. Nos apoyamos en tecnología de última generación y
-            protocolos clínicos seguros, sin perder de vista la empatía y el
-            respeto en cada consulta. Escuchamos a nuestros pacientes,
-            entendemos sus necesidades y nos esforzamos por ofrecer soluciones
-            que no solo resuelvan problemas, sino que promuevan sonrisas
-            duraderas.
+            Desde nuestros inicios, hemos trabajado con pasión y profesionalismo
+            para que cada visita al dentista sea una experiencia positiva. Nos
+            apoyamos en tecnología de última generación y protocolos clínicos
+            seguros, sin perder de vista la empatía y el respeto en cada
+            consulta. Escuchamos a nuestros pacientes, entendemos sus
+            necesidades y nos esforzamos por ofrecer soluciones que no solo
+            resuelvan problemas, sino que promuevan sonrisas duraderas.
           </p>
         </div>
       </div>

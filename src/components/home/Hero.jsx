@@ -20,7 +20,7 @@ function Hero() {
           autoPlay
           loop
           muted
-          // playsInline
+          playsInline
           // poster="video-poster.jpg"
         />
         {/* Capa de gradiente */}
