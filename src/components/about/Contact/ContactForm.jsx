@@ -67,7 +67,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             placeholder=" "
-            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
           />
           <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-blue-600">
             Nombre completo
@@ -82,7 +82,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             placeholder=" "
-            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
           />
           <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-blue-600">
             Correo electrónico
@@ -98,7 +98,7 @@ export default function ContactForm() {
           required
           rows={4}
           placeholder=" "
-          className="resize-none block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          className="resize-none block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 text-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer text-[14px] md:text-[16px] lg:text-[18px]"
         />
         <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-blue-600">
           Mensaje
