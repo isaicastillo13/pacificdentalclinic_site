@@ -3,12 +3,11 @@ import { FiCircle } from "react-icons/fi";
 import Carousel from "./Carousel"; // tu componente
 import TestimonialsSection from "./TestimonialsSection"; // Asumiendo que tienes un archivo Testimonials.js que exporta los datos
 
-
 export default function Testimonials() {
   const [items, setItems] = useState([]);
   const API_URL = import.meta.env.VITE_API_URL;
-  console.log("Usando API_URL:", API_URL);
-  
+  // console.log("Usando API_URL:", API_URL);
+
   useEffect(() => {
     fetch(`${API_URL}/api/testimonials`)
       .then((res) => res.json())
