@@ -129,12 +129,12 @@ export default function ContactForm() {
 
       {status === "success" && (
         <p className="text-green-600 bg-green-50 p-4 rounded-full text-center text-sm md:text-base">
-          Mensaje enviado correctamente 🥳
+          Mensaje enviado correctamente 🥳.
         </p>
       )}
       {status === "error" && (
         <p className="text-red-600 bg-red-50 p-4 rounded-full text-center text-sm md:text-base">
-          Ocurrió un error al enviar el mensaje 😅
+          Ocurrió un error al enviar el mensaje 😅.
         </p>
       )}
     </form>
