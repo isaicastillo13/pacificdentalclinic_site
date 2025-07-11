@@ -16,11 +16,11 @@ function Hero() {
         <Navbar />
         <video
           className="absolute top-0 left-0 object-cover w-full h-full"
-          src={videoHero}
           autoPlay
           loop
           muted
           playsInline
+          src={videoHero}
           // poster="video-poster.jpg"
         />
         {/* Capa de gradiente */}
