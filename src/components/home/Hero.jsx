@@ -1,4 +1,5 @@
 import videoHero from "../../assets/video/heroVideo.mp4";
+import videooptimizado from "../../assets/video/video-optimizado.mp4";
 import videoApiceptomia from "../../assets/video/apiceptiomia.mp4";
 import pageBg from "../../assets/backgrounds/page-bg.svg";
 import iconoFlechaAbajo from "../../assets/icons/arrow-down-circle.svg";
@@ -21,7 +22,7 @@ function Hero() {
           loop
           muted
           playsInline
-          src={videoHero}
+          src={videooptimizado}
           // poster="video-poster.jpg"
         />
         {/* Capa de gradiente */}
