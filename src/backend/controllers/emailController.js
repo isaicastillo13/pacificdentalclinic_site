@@ -1,4 +1,3 @@
-const { send } = require("vite");
 const { sendEmail } = require("../services/emailService");
 
 exports.sendContactEmail = async (req, res) => {
