@@ -7,10 +7,10 @@ function Footer() {
     <footer className="bg-white dark:bg-gray-900">
       <div className="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <Link to="/" className="flex items-center">
+          <div className="px-8 mb-6 md:mb-0">
+            <Link to="/" className="flex items-start md:flex-col lg:flex-row">
               <img src={logoPCD} className="h-8 me-3" alt="Logo Pacific Dental Clinic" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center font-semibold ext-2xl 4 whitespace-nowrap dark:text-white text-[14px] lg:text-[16px]">
                 PACIFIC DENTAL CLINIC
               </span>
             </Link>
@@ -20,7 +20,7 @@ function Footer() {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contacto</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
+                <li className="mb-4 text-[14px] lg:text-[16px]">
                   <a
                     href="https://api.whatsapp.com/message/LKGBJRM3FAVOO1?autoload=1&app_absent=0"
                     className="hover:underline"
@@ -36,7 +36,7 @@ function Footer() {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Ubicacion</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
+                <li className="mb-4 text-[14px] lg:text-[16px]">
                   <a
                     href="https://maps.app.goo.gl/jYU3vJJsLtd77XwV8"
                     className="hover:underline"
@@ -51,7 +51,7 @@ function Footer() {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Síguenos</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
+                <li className="mb-4 text-[14px] lg:text-[16px]">
                   <a
                     href="https://www.instagram.com/pacificdentalpty/"
                     className="hover:underline"
@@ -67,13 +67,13 @@ function Footer() {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
+                <li className="mb-4 text-[14px] lg:text-[16px]">
                   <Link to="/politica-de-privacidad" className="hover:underline">
                     Política de Privacidad
                   </Link>
                 </li>
                 <li>
-                  <Link to="/terminos-y-condiciones" className="hover:underline">
+                  <Link to="/terminos-y-condiciones" className="hover:underline text-[14px] lg:text-[16px]">
                     Términos y Condiciones
                   </Link>
                 </li>

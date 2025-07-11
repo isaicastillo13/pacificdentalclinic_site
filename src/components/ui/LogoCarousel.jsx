@@ -5,6 +5,7 @@ import logoEuropeanFederation from "../../assets/logo/logoEuropeanFederation.web
 import logoSpo from "../../assets/logo/logoSpo.webp";
 import logoWorldFederation from "../../assets/logo/logoWorldFederation.webp";
 import logoAsociacionOdontologica from "../../assets/logo/logoAsociacionOdontologica.webp";
+import logoInvisalingProviders from "../../assets/logo/logoInvisalignProvider.webp";
 
 const logos = [
   {
@@ -31,6 +32,10 @@ const logos = [
     src: logoAsociacionOdontologica,
     alt: "Asociación Odontológica Panameña",
   },
+  {
+    src: logoInvisalingProviders,
+    alt: "Asociación Odontológica Panameña",
+  },
 ];
 
 const LogoCarousel = () => {
@@ -41,12 +46,14 @@ const LogoCarousel = () => {
       </h2>
       <motion.div
         className="flex gap-10 animate-scroll whitespace-nowrap"
-        animate={{
-          x: ["0%", "-50%"],
-        }}
+        animate={
+          window.innerWidth < 768
+            ? { transform: "translateX(-400%)" }
+            : { transform: "translateX(-50%)" }
+        }
         transition={{
           repeat: Infinity,
-          duration: 5,
+          duration: 10,
           ease: "linear",
         }}
       >
