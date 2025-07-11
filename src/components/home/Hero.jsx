@@ -21,7 +21,7 @@ function Hero() {
           loop
           muted
           playsInline
-          src={videoApiceptomia}
+          src={videoHero}
           // poster="video-poster.jpg"
         />
         {/* Capa de gradiente */}
