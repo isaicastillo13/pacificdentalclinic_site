@@ -14,6 +14,7 @@ const corsOptions = {
   origin: [
     "http://localhost:5173",
     "https://pacificdentalclinic-site-kjhk.vercel.app",
+    "https://www.pacificdentalclinic.com",
   ], // Cambia este puerto según tu frontend
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
