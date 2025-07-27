@@ -12,8 +12,11 @@ const app = express();
 // Configurar CORS para aceptar solicitudes desde localhost:3000
 const corsOptions = {
   origin: [
+    // Desarrollo
     "http://localhost:5173",
-    "https://pacificdentalclinic-site-kjhk.vercel.app",
+    // "https://pacificdentalclinic-site-kjhk.vercel.app",
+    
+    // Producción
     "https://www.pacificdentalclinic.com",
   ], // Cambia este puerto según tu frontend
   methods: ["GET", "POST"],
