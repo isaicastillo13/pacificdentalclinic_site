@@ -3,16 +3,17 @@ import iconRadioButtom from '../../assets/icons/radio-buttom.svg'; // Importa la
 
 function Card({ name, specialization, img = imagenFondo}) {
     return(
-        <div className="relative w-80 h-96 rounded-lg overflow-hidden m-4">
-            <img src={img} alt={name} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 flex flex-col justify-end p-4 gap-4">
-                <p className="text-white text-lg font-bold">{name}</p>
-                <span className="flex gap-2 items-center text-white text-sm backdrop-blur-sm bg-white/30 border-1 rounded-full p-2 w-48">
-                <img src={iconRadioButtom} alt="" />
-                {specialization}
-                </span>
-            </div>
-        </div>
+        <div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-96">
+  <img src={img} alt={name} className="object-cover w-full h-full" />
+  <div className="absolute inset-0 flex flex-col justify-end gap-4 p-4 ">
+    <p className="text-lg font-bold text-white">{name}</p>
+    <span className="flex items-center gap-1 p-2 text-sm text-white border rounded-full backdrop-blur-sm bg-white/30 border-white/50">
+      <img src={iconRadioButtom} alt="" className="w-4 h-4" />
+      {specialization}
+    </span>
+  </div>
+</div>
+
     );
 }
 

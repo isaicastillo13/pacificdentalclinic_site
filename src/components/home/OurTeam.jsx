@@ -36,16 +36,19 @@ function OurTeam() {
       </div>
 
       {/* Team Cards Section */}
-      <div
-        className="flex flex-col items-center justify-center gap-4 pt-10 md:grid md:grid-cols-2 lg:flex lg:flex-row"
-      >
-        <Card img={imgGlroia} name="Dra. Gloria Ho" specialization="Ortodoncista" />
-        <Card img={imgPasquale} name="Dr. Pasquale Calvosa" specialization="Prostodoncista" />
-        <Card img={imgMonica} name="Dra. Monica Shedden" specialization="Periodoncista" />
-        <Card img={imgMoises} name="Dr. Moises Lukowiecki" specialization="Endodoncista" />
-        <Card img={imgKira} name="Dra. Kira Singh" specialization="Odontopediatra" />
-        <Card img={imgCarlos} name="Dr. Carlos Salazar" specialization="Ortodoncista" />
-      </div>
+     <div className="w-full px-4 py-10 mx-auto max-w-7xl">
+  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 place-items-center">
+    {/* Tus tarjetas */}
+    <Card img={imgGlroia} name="Dra. Gloria Ho" specialization="Ortodoncista" />
+    <Card img={imgPasquale} name="Dr. Pasquale Calvosa" specialization="Prostodoncista" />
+    <Card img={imgMonica} name="Dra. Monica Shedden" specialization="Periodoncista" />
+    <Card img={imgMoises} name="Dr. Moises Lukowiecki" specialization="Endodoncista" />
+    <Card img={imgKira} name="Dra. Kira Singh" specialization="Odontopediatra" />
+    <Card img={imgCarlos} name="Dr. Carlos Salazar" specialization="Ortodoncista" />
+  </div>
+</div>
+
+
 
 
       {/* Footer Section */}
