@@ -6,6 +6,7 @@ import imgMonica from "../../assets/image/dramonica.webp";
 import imgPasquale from "../../assets/image/drpasquale.webp";
 import imgMoises from "../../assets/image/drmoises.webp";
 import imgKira from "../../assets/image/drakira.webp";
+import imgCarlos from "../../assets/image/drcarlos.webp";
 import LogoCarousel from "../ui/LogoCarousel.jsx";
 
 
@@ -39,10 +40,11 @@ function OurTeam() {
         className="flex flex-col items-center justify-center gap-4 pt-10 md:grid md:grid-cols-2 lg:flex lg:flex-row"
       >
         <Card img={imgGlroia} name="Dra. Gloria Ho" specialization="Ortodoncista" />
-        <Card img={imgMonica} name="Dra. Monica Shedden" specialization="Periodoncista" />
         <Card img={imgPasquale} name="Dr. Pasquale Calvosa" specialization="Prostodoncista" />
+        <Card img={imgMonica} name="Dra. Monica Shedden" specialization="Periodoncista" />
         <Card img={imgMoises} name="Dr. Moises Lukowiecki" specialization="Endodoncista" />
         <Card img={imgKira} name="Dra. Kira Singh" specialization="Odontopediatra" />
+        <Card img={imgCarlos} name="Dr. Carlos Salazar" specialization="Ortodoncista" />
       </div>
 
 

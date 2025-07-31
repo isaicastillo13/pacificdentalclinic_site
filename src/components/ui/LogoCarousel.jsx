@@ -6,6 +6,7 @@ import logoSpo from "../../assets/logo/logoSpo.webp";
 import logoWorldFederation from "../../assets/logo/logoWorldFederation.webp";
 import logoAsociacionOdontologica from "../../assets/logo/logoAsociacionOdontologica.webp";
 import logoInvisalingProviders from "../../assets/logo/logoInvisalignProvider.webp";
+import logoSociedadPanamena from "../../assets/logo/logoSociedadPanamena.webp";
 
 const logos = [
   {
@@ -35,6 +36,10 @@ const logos = [
   {
     src: logoInvisalingProviders,
     alt: "Asociación Odontológica Panameña",
+  },
+  {
+    src: logoSociedadPanamena,
+    alt: "Sociedad Panameña de Periodoncia",
   },
 ];
 
