@@ -1,10 +1,12 @@
-const express = require("express");
 const dotenv = require("dotenv");
+dotenv.config(); // Cargar las variables de entorno
+
+const express = require("express");
+
 const connectDB = require("./config/db");
 const cors = require("cors");
 const emailRoutes = require("./routes/emailRoutes");
 
-dotenv.config(); // Cargar las variables de entorno
 connectDB(); // Conectar a la base de datos
 
 const app = express();
