@@ -13,7 +13,6 @@ export default function ContactForm() {
 
   // URL FIJA - sin dependencias de variables de entorno
   const API_URL = 'https://www.pacificdentalclinic.com';
-
   useEffect(() => {
     if (status) {
       const timer = setTimeout(() => {
