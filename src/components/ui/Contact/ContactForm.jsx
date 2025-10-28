@@ -11,8 +11,9 @@ export default function ContactForm() {
   const [status, setStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  // URL FIJA - sin dependencias de variables de entorno
+  // URL FIJA - sin variables de entorno
   const API_URL = 'https://www.pacificdentalclinic.com';
+
   useEffect(() => {
     if (status) {
       const timer = setTimeout(() => {
@@ -36,7 +37,7 @@ export default function ContactForm() {
     setStatus(null);
 
     try {
-      console.log("🔄 Iniciando envío de formulario...");
+      console.log("🔄 Enviando a:", `${API_URL}/api/contact`);
 
       const response = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
@@ -46,28 +47,18 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
-      console.log("📨 Status de respuesta:", response.status);
+      const result = await response.json();
 
       if (!response.ok) {
-        let errorMessage = `Error ${response.status}: ${response.statusText}`;
-        try {
-          const errorData = await response.json();
-          errorMessage = errorData.error || errorMessage;
-        } catch {
-          const errorText = await response.text();
-          errorMessage = errorText || errorMessage;
-        }
-        throw new Error(errorMessage);
+        throw new Error(result.error || `Error ${response.status}`);
       }
 
-      const result = await response.json();
-      console.log("✅ Respuesta exitosa:", result);
-
+      console.log("✅ Éxito:", result);
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
 
     } catch (error) {
-      console.error("❌ Error al enviar formulario:", error);
+      console.error("❌ Error:", error);
       setStatus("error");
     } finally {
       setIsLoading(false);
