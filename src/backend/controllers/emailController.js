@@ -15,6 +15,7 @@ exports.sendContactEmail = async (req, res) => {
       .json({ message: "Correo electrónico enviado correctamente" });
   } catch (error) {
     console.error("Error al enviar el correo electrónico:", error);
+    console.log("Error details:", error.message);
     return res
       .status(500)
       .json({ message: "Error al enviar el correo electrónico" });

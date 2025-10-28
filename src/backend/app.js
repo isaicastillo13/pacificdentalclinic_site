@@ -20,6 +20,7 @@ const corsOptions = {
     
     // Producción
     "https://www.pacificdentalclinic.com",
+    
   ], // Cambia este puerto según tu frontend
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],

@@ -26,6 +26,7 @@ transporter.verify((err, ok) => {
 });
 
 exports.sendEmail = async ({ name, email, message }) => {
+console.log("----Preparing to send email----");
   return transporter.sendMail({
     from: process.env.EMAIL_FROM || `Pacific Dental Clinic <${process.env.EMAIL_USER}>`,
     replyTo: email,                                    // responder al visitante

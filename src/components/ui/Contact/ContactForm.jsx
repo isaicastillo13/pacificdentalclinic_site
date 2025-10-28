@@ -8,10 +8,18 @@ export default function ContactForm() {
     message: "",
   });
 
-  const [status, setStatus] = useState(null); // 'success' | 'error' | null
+  const [status, setStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const API_URL = import.meta.env.VITE_API_URL;
+  // URL para desarrollo y producción
+  const getApiUrl = () => {
+    if (import.meta.env.DEV) {
+      // En desarrollo, usa la URL de producción
+      return 'https://www.pacificdentalclinic.com/api/contact';
+    }
+    // En producción, usa ruta relativa
+    return '/api/contact';
+  };
 
   useEffect(() => {
     if (status) {
@@ -36,20 +44,42 @@ export default function ContactForm() {
     setStatus(null);
 
     try {
-      const res = await fetch(`${API_URL}/api/contact`, {
+      console.log("🔄 Iniciando envío de formulario...");
+
+      const apiUrl = getApiUrl();
+      console.log("📡 URL de API:", apiUrl);
+
+      const res = await fetch(apiUrl, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(formData),
       });
 
-      if (res.ok) {
-        setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        throw new Error("Error al enviar");
+      console.log("📨 Status de respuesta:", res.status);
+
+      if (!res.ok) {
+        let errorMessage = `Error ${res.status}: ${res.statusText}`;
+        try {
+          const errorData = await res.json();
+          errorMessage = errorData.error || errorMessage;
+        } catch {
+          // Si no se puede parsear JSON, usar el texto plano
+          const errorText = await res.text();
+          errorMessage = errorText || errorMessage;
+        }
+        throw new Error(errorMessage);
       }
+
+      const result = await res.json();
+      console.log("✅ Respuesta exitosa:", result);
+
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+
     } catch (error) {
-      console.error("Error al enviar formulario:", error);
+      console.error("❌ Error al enviar formulario:", error);
       setStatus("error");
     } finally {
       setIsLoading(false);
@@ -59,7 +89,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-lg m-10 space-y-4 ">
       <div className="grid gap-4 md:grid-cols-2 md:gap-6">
-        <div className="relative z-0 w-full gap-1 grou">
+        <div className="relative z-0 w-full gap-1 group">
           <input
             type="text"
             name="name"

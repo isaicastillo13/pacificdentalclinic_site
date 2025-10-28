@@ -8,6 +8,7 @@ const { sendContactEmail } = require('../controllers/emailController');
 
 
 // Ruta para enviar un correo electrónico de contacto
+console.log("----Setting up /contact route----");
 router.post('/contact', sendContactEmail);
 
 module.exports = router;
