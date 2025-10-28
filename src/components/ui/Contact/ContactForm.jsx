@@ -15,7 +15,7 @@ export default function ContactForm() {
   const getApiUrl = () => {
     if (import.meta.env.DEV) {
       // En desarrollo, usa la URL de producción
-      return 'https://www.pacificdentalclinic.com/api/contact';
+      return 'http://localhost:5173/api/contact';
     }
     // En producción, usa ruta relativa
     return '/api/contact';
