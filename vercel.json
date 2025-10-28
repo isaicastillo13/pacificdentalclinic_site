@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/contact/index.js",
+      "src": "api/contact/index.mjs",
       "use": "@vercel/node"
     },
     {
@@ -16,8 +16,7 @@
   "routes": [
     {
       "src": "/api/contact",
-      "dest": "/api/contact/index.js",
-      "methods": ["GET", "POST", "OPTIONS"]
+      "dest": "/api/contact/index.mjs"
     },
     {
       "src": "/(.*)",
