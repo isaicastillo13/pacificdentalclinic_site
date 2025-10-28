@@ -1,16 +1,10 @@
-// api/contact/index.js - VERSIÓN ESTABLE
-const { Resend } = require('resend');
+// api/contact/index.mjs - VERSIÓN ES MODULES
+import { Resend } from 'resend';
 
-// Inicializar Resend de forma segura
-let resend;
-try {
-  resend = new Resend(process.env.RESEND_API_KEY);
-  console.log('✅ Resend initialized successfully');
-} catch (error) {
-  console.error('❌ Resend initialization failed:', error);
-}
+// Inicializar Resend
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   console.log('🔄 API Contact called - Method:', req.method);
   
   try {
@@ -23,11 +17,6 @@ module.exports = async (req, res) => {
     if (req.method === 'OPTIONS') {
       console.log('🔄 Handling OPTIONS preflight');
       return res.status(200).end();
-    }
-    
-    // Verificar que Resend se inicializó correctamente
-    if (!resend) {
-      throw new Error('Resend no se pudo inicializar. Verifica RESEND_API_KEY.');
     }
     
     // Solo permitir POST para el envío real
@@ -61,7 +50,7 @@ module.exports = async (req, res) => {
         });
       }
       
-      // Enviar email (esto es lo que probablemente falla)
+      // Enviar email
       console.log('🔄 Attempting to send email...');
       const { data, error: resendError } = await resend.emails.send({
         from: 'Pacific Dental Clinic <onboarding@resend.dev>',
@@ -109,4 +98,4 @@ module.exports = async (req, res) => {
       stack: process.env.NODE_ENV === 'production' ? undefined : error.stack
     });
   }
-};
+}
