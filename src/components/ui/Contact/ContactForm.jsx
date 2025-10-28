@@ -11,15 +11,8 @@ export default function ContactForm() {
   const [status, setStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  // URL para desarrollo y producción
-  const getApiUrl = () => {
-    if (import.meta.env.DEV) {
-      // En desarrollo, usa la URL de producción
-      return 'http://localhost:5173/api/contact';
-    }
-    // En producción, usa ruta relativa
-    return '/api/contact';
-  };
+  // URL FIJA - sin dependencias de variables de entorno
+  const API_URL = 'https://www.pacificdentalclinic.com';
 
   useEffect(() => {
     if (status) {
@@ -46,10 +39,7 @@ export default function ContactForm() {
     try {
       console.log("🔄 Iniciando envío de formulario...");
 
-      const apiUrl = getApiUrl();
-      console.log("📡 URL de API:", apiUrl);
-
-      const res = await fetch(apiUrl, {
+      const response = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
@@ -57,22 +47,21 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
-      console.log("📨 Status de respuesta:", res.status);
+      console.log("📨 Status de respuesta:", response.status);
 
-      if (!res.ok) {
-        let errorMessage = `Error ${res.status}: ${res.statusText}`;
+      if (!response.ok) {
+        let errorMessage = `Error ${response.status}: ${response.statusText}`;
         try {
-          const errorData = await res.json();
+          const errorData = await response.json();
           errorMessage = errorData.error || errorMessage;
         } catch {
-          // Si no se puede parsear JSON, usar el texto plano
-          const errorText = await res.text();
+          const errorText = await response.text();
           errorMessage = errorText || errorMessage;
         }
         throw new Error(errorMessage);
       }
 
-      const result = await res.json();
+      const result = await response.json();
       console.log("✅ Respuesta exitosa:", result);
 
       setStatus("success");
