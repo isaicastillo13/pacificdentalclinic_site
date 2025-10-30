@@ -53,7 +53,7 @@ export default async function handler(req, res) {
       // Enviar email
       console.log('🔄 Attempting to send email...');
       const { data, error: resendError } = await resend.emails.send({
-        from: 'Pacific Dental Clinic <onboarding@resend.dev>',
+        from: 'Pacific Dental Clinic <contacto@pacificdentalclinic.com>',
         to: [process.env.EMAIL_USER || 'info@pacificdentalclinic.com'],
         reply_to: email,
         subject: `Nuevo mensaje de ${name} - Pacific Dental Clinic`,
