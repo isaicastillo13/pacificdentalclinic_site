@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
-  console.log('🔄 API Contact called - Method:', req.method);
+  // console.log('🔄 API Contact called - Method:', req.method);
   
   try {
     // Configurar CORS
@@ -15,13 +15,13 @@ export default async function handler(req, res) {
     
     // Manejar preflight OPTIONS
     if (req.method === 'OPTIONS') {
-      console.log('🔄 Handling OPTIONS preflight');
+      // console.log('🔄 Handling OPTIONS preflight');
       return res.status(200).end();
     }
     
     // Solo permitir POST para el envío real
     if (req.method === 'POST') {
-      console.log('📨 Processing POST request');
+      // console.log('📨 Processing POST request');
       
       let body;
       try {
@@ -35,11 +35,11 @@ export default async function handler(req, res) {
       
       const { name, email, message } = body;
       
-      console.log('📝 Form data received:', { 
-        name: name?.substring(0, 20), 
-        email, 
-        message: message?.substring(0, 30) + '...' 
-      });
+      // console.log('📝 Form data received:', { 
+      //   name: name?.substring(0, 20), 
+      //   email, 
+      //   message: message?.substring(0, 30) + '...' 
+      // });
       
       // Validaciones básicas
       if (!name || !email || !message) {
@@ -51,7 +51,7 @@ export default async function handler(req, res) {
       }
       
       // Enviar email
-      console.log('🔄 Attempting to send email...');
+      // console.log('🔄 Attempting to send email...');
       const { data, error: resendError } = await resend.emails.send({
         from: 'Pacific Dental Clinic <contacto@pacificdentalclinic.com>',
         to: [process.env.EMAIL_USER || 'info@pacificdentalclinic.com'],
@@ -69,11 +69,11 @@ export default async function handler(req, res) {
       });
       
       if (resendError) {
-        console.error('❌ Resend API error:', resendError);
+        // console.error('❌ Resend API error:', resendError);
         throw new Error(`Resend error: ${resendError.message}`);
       }
       
-      console.log('✅ Email sent successfully:', data?.id);
+      // console.log('✅ Email sent successfully:', data?.id);
       
       return res.status(200).json({
         success: true,
@@ -90,7 +90,7 @@ export default async function handler(req, res) {
     });
     
   } catch (error) {
-    console.error('💥 API Error:', error);
+    // console.error('💥 API Error:', error);
     
     res.status(500).json({
       error: 'Error interno del servidor',
