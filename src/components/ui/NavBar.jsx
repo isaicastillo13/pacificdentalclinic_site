@@ -36,14 +36,14 @@ function Navbar({ color = "text-neutralsligth", logoColor = logoClinica }) {
       className={`absolute top-0 z-50 backdrop-blur-[4px] flex items-center justify-between p-4 md:px-8 ${color} w-full`}
     >
       <div>
-        <a href="/" aria-label="Inicio">
+        <Link to="/" aria-label="Inicio">
           <img
             src={logoColor}
             alt="logo de la clinica"
             className="w-auto h-12 "
             loading="lazy"
           />
-        </a>
+        </Link>
       </div>
 
       <button
