@@ -10,7 +10,7 @@ function Index() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/nosotros" element={<Nosotros />}></Route>
         <Route path="/servicios" element={<Servicios />}></Route>
         <Route path="/politica-de-privacidad" element={<PrivacyPolicy />}></Route>

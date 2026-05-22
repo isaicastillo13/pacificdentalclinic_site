@@ -3,13 +3,11 @@ import logoClinicaDark from "../../assets/logo/logo-pacificdentalclinic-oscuro.w
 import iconoNosotros from "../../assets/icons/community.svg";
 import iconoServicios from "../../assets/icons/services.svg";
 import iconoContacto from "../../assets/icons/contact.svg";
-import BottomContact from './Buttom.jsx'
+import BottomContact from "./Buttom.jsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-
-
-
-function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
+function Navbar({ color = "text-neutralsligth", logoColor = logoClinica }) {
   const menuItems = [
     {
       href: "/nosotros",
@@ -34,50 +32,52 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`absolute top-0 z-50 backdrop-blur-[4px] flex items-center justify-between p-4 md:px-8 ${color} w-full`}>
+    <nav
+      className={`absolute top-0 z-50 backdrop-blur-[4px] flex items-center justify-between p-4 md:px-8 ${color} w-full`}
+    >
       <div>
-        <a href="/" aria-label="Inicio">
+        <Link to="/" aria-label="Inicio">
           <img
             src={logoColor}
             alt="logo de la clinica"
             className="w-auto h-12 "
             loading="lazy"
           />
-        </a>
+        </Link>
       </div>
 
       <button
-            className="flex items-center px-2 py-1 rounded md:hidden focus:outline-none focus:ring-2 focus:ring-primary"
-            aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <svg
-              className={`h-8 w-8 ${color}`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {menuOpen ? (
-                // X icon
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                // Hamburger icon
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+        className="flex items-center px-2 py-1 rounded md:hidden focus:outline-none focus:ring-2 focus:ring-primary"
+        aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <svg
+          className={`h-8 w-8 ${color}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {menuOpen ? (
+            // X icon
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          ) : (
+            // Hamburger icon
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          )}
+        </svg>
+      </button>
 
       {/* Mask background when menu is open */}
       {menuOpen && (
@@ -88,7 +88,9 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
       )}
 
       {/* Mobile Menu (Sliding from the left) */}
-      <div className={`fixed top-0 left-0 z-50 h-screen w-full transform transition-transform duration-300 bg-neutralsligth p-10 md:hidden shadow-lg ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}>
+      <div
+        className={`fixed top-0 left-0 z-50 h-screen w-full transform transition-transform duration-300 bg-neutralsligth p-10 md:hidden shadow-lg ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
+      >
         <div className="flex items-center justify-between mb-4 text-primary">
           <a href="/" aria-label="Inicio">
             <img
@@ -134,33 +136,26 @@ function Navbar({color = 'text-neutralsligth', logoColor = logoClinica}) {
           </button>
         </div>
 
-
         {/* Menu items for mobile */}
         <ul className="flex flex-col items-center h-screen space-y-4 text-2xl mt-28">
-            {menuItems.map((item) => (
-                <li key={item.label}>
-                    <a
-                        href={item.href}
-                        className="flex items-center space-x-2 text-primary"
-                    >
-                        <span>{item.label}</span>
-                    </a>
-                </li>
-            ))}
+          {menuItems.map((item) => (
+            <li key={item.label}>
+              <Link
+                to={item.href}
+                className="flex items-center space-x-2 text-primary"
+              >
+                <span>{item.label}</span>
+              </Link>
+            </li>
+          ))}
         </ul>
-        
       </div>
       {/* Desktop Menu */}
       <div className="hidden space-x-8 md:flex">
         {menuItems.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            className="flex items-center space-x-2 "
-          >
-            
+          <Link to={item.href} className="flex items-center space-x-2">
             <span>{item.label}</span>
-          </a>
+          </Link>
         ))}
       </div>
     </nav>
