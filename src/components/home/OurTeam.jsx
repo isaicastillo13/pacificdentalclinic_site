@@ -7,6 +7,7 @@ import imgPasquale from "../../assets/image/drpasquale.webp";
 import imgMoises from "../../assets/image/drmoises.webp";
 import imgKira from "../../assets/image/drakira.webp";
 import imgCarlos from "../../assets/image/drcarlos.webp";
+import imgKemenhou from "../../assets/image/drkemenhou.jpeg";
 import LogoCarousel from "../ui/LogoCarousel.jsx";
 
 const handleAnimationComplete = () => {
@@ -65,6 +66,11 @@ function OurTeam() {
               img={imgCarlos}
               name="Dr. Carlos Salazar"
               specialization="Ortodoncista"
+            />
+            <Card
+              img={imgKemenhou}
+              name="Dr. Kemen Hou"
+              specialization="Odontólogo"
             />
           </div>
         </div>
